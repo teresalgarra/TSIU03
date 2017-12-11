@@ -1,0 +1,400 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\teral436\Desktop\Lab4_Audio_init-20171211T113934Z-001\Lab4_Audio_init
+T_opt
+Vok74Zja52MDjea=k5e05d1
+04 8 3 work tb_audio sim 1
+=10-90e2ba149155-5a2eb36e-98-125c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1b;51
+Eapplication
+Z0 w1411118138
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\teral436\Desktop\Lab4_Audio
+Z5 8C:/Users/teral436/Desktop/Lab4_Audio/Application.vhd
+Z6 FC:/Users/teral436/Desktop/Lab4_Audio/Application.vhd
+l0
+L9
+VNT4_g4<2l>@SKl`:6gX5B1
+Z7 OL;C;10.1b;51
+32
+Z8 !s108 1513006248.989000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/teral436/Desktop/Lab4_Audio/Application.vhd|
+Z10 !s107 C:/Users/teral436/Desktop/Lab4_Audio/Application.vhd|
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+!s100 <0dIbWInFM2oVoC1;:PMP0
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 11 application 0 22 NT4_g4<2l>@SKl`:6gX5B1
+l43
+L20
+Vi1YE;bSQVH9:<>nBIJPE>1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 X5IOGWd]OFRVYF?L`Mm7P1
+!i10b 1
+Echannel_mod
+Z13 w1513005871
+R1
+R2
+R3
+R4
+Z14 8C:/Users/teral436/Desktop/Lab4_Audio/Channel_Mod.vhd
+Z15 FC:/Users/teral436/Desktop/Lab4_Audio/Channel_Mod.vhd
+l0
+L53
+VzJ02f56kn1_iKMB1n3UQ10
+R7
+32
+Z16 !s108 1513006249.509000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/teral436/Desktop/Lab4_Audio/Channel_Mod.vhd|
+Z18 !s107 C:/Users/teral436/Desktop/Lab4_Audio/Channel_Mod.vhd|
+R11
+R12
+!s100 haWmQfVIm^YB_TFaB[5XY0
+!i10b 1
+Aarch2
+R1
+R2
+R3
+DEx4 work 11 channel_mod 0 22 zJ02f56kn1_iKMB1n3UQ10
+l70
+L67
+VGboi9gdAQD8MITm=[G?@H1
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!s100 LgH]UAaRPOj0]<J[S:<iV0
+!i10b 1
+Ectrl
+Z19 w1513009644
+R1
+R2
+R3
+R4
+Z20 8C:\Users\teral436\Desktop\Lab4_Audio\ctrl.vhd
+Z21 FC:\Users\teral436\Desktop\Lab4_Audio\ctrl.vhd
+l0
+L47
+Vd:^fD3Tl3fiiNUQWR=Jnj1
+R7
+32
+Z22 !s108 1513009743.018000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\Users\teral436\Desktop\Lab4_Audio\ctrl.vhd|
+Z24 !s107 C:\Users\teral436\Desktop\Lab4_Audio\ctrl.vhd|
+R11
+R12
+!s100 OI7hJLHcS^XZ@fIEaoSnA1
+!i10b 1
+Aarch
+R1
+R2
+R3
+DEx4 work 4 ctrl 0 22 d:^fD3Tl3fiiNUQWR=Jnj1
+l60
+L55
+VTTYblKA1kfM@R]DBnD3aL3
+R7
+32
+R22
+R23
+R24
+R11
+R12
+!s100 ?7Xb5J_lHZZ;;L:6lPm?P2
+!i10b 1
+Egroup_no
+Z25 w1411118138
+R2
+R3
+R4
+Z26 8C:/Users/teral436/Desktop/Lab4_Audio/group_no.vhd
+Z27 FC:/Users/teral436/Desktop/Lab4_Audio/group_no.vhd
+l0
+L7
+V`8kKI3`WTeQbzbm56fQFA3
+R7
+32
+Z28 !s108 1513006250.159000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/teral436/Desktop/Lab4_Audio/group_no.vhd|
+Z30 !s107 C:/Users/teral436/Desktop/Lab4_Audio/group_no.vhd|
+R11
+R12
+!s100 UJXobCL?NB3?5oGOWTR8e0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 8 group_no 0 22 `8kKI3`WTeQbzbm56fQFA3
+l14
+L12
+VJJ3GKMkWKmHJ[F=l1HQYM1
+R7
+32
+R28
+R29
+R30
+R11
+R12
+!s100 8joCFL7oAXeJ;zWkoc1o^0
+!i10b 1
+Emux_audio
+Z31 w1513006981
+R1
+R2
+R3
+R4
+Z32 8C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd
+Z33 FC:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd
+l0
+L5
+VeHdmBeiJ<oZl:e]SA<7EH0
+R7
+32
+Z34 !s108 1513007099.900000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd|
+Z36 !s107 C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd|
+R11
+R12
+!s100 d_[iU`BkT=kS2J7F86ZIX0
+!i10b 1
+Aarch
+R1
+R2
+R3
+Z37 DEx4 work 9 mux_audio 0 22 eHdmBeiJ<oZl:e]SA<7EH0
+l12
+L11
+VQ;Zgh@mW<;0<a;VSkk4i`1
+R7
+32
+R34
+R35
+R36
+R11
+R12
+!s100 7Lf_Mc5jg_Kd0]2;?`HSe0
+!i10b 1
+Aarch3
+R1
+R2
+R3
+R37
+l12
+L11
+VlA^RP8WI^enAholTVJF:M0
+R7
+32
+R35
+R11
+R12
+w1513003562
+R36
+!s108 1513006250.509000
+!s100 597m30GKfCokU0J<<4TBR3
+!i10b 1
+Epoly_rom
+R25
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L173
+VkCSmUe^I^EK@JY?:`MTe:1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 `Ye5X6Pa1TWL^LK5]DW^[2
+!i10b 1
+Artl
+R1
+R2
+R3
+DEx4 work 8 poly_rom 0 22 kCSmUe^I^EK@JY?:`MTe:1
+l185
+L181
+Vl^9jZO@6lhZW=<_5hXGJO0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 g>;:i2:oKR]1WZPDPX:OV0
+!i10b 1
+Epsac
+R25
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L110
+VF;z^O?HoRV60ZN2NG3f5_0
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 M3c_`>oGN_><QY4?F^nWc3
+!i10b 1
+Artl
+Z38 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R1
+R2
+R3
+DEx4 work 4 psac 0 22 F;z^O?HoRV60ZN2NG3f5_0
+l139
+L117
+Vc8i109GD`zPB<S@>`G=k<2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 C0>6G`CT]8S:nmL<T2kng2
+!i10b 1
+Esnddriver
+Z39 w1513010020
+R1
+R2
+R3
+R4
+Z40 8C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd
+Z41 FC:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd
+l0
+L25
+V;DNlK7To1MBhOd:7>URm>0
+R7
+32
+Z42 !s108 1513010024.732000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd|
+Z44 !s107 C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd|
+R11
+R12
+!s100 WR6IUKH22963@@:adQQ^m1
+!i10b 1
+Abdf_type
+R1
+R2
+R3
+DEx4 work 9 snddriver 0 22 ;DNlK7To1MBhOd:7>URm>0
+l94
+L44
+V2lIebU49GZHollamCJXEC3
+R7
+32
+R42
+R43
+R44
+R11
+R12
+!s100 HMCD<obz]JM`8mL3zIk2[0
+!i10b 1
+Esound
+Z45 w1513004000
+R2
+R3
+R4
+Z46 8C:\Users\teral436\Desktop\Lab4_Audio\Sound.vhd
+Z47 FC:\Users\teral436\Desktop\Lab4_Audio\Sound.vhd
+l0
+L24
+Vem873:ZHVYHWWdOlZJ`]>0
+R7
+32
+Z48 !s108 1513006251.239000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\Users\teral436\Desktop\Lab4_Audio\Sound.vhd|
+Z50 !s107 C:\Users\teral436\Desktop\Lab4_Audio\Sound.vhd|
+R11
+R12
+!s100 d;K?gML`UQ:<E?3acT4z03
+!i10b 1
+Abdf_type
+R2
+R3
+DEx4 work 5 sound 0 22 em873:ZHVYHWWdOlZJ`]>0
+l89
+L42
+V]JfzjlRlEYM9O?Cdj0J5h0
+R7
+32
+R48
+R49
+R50
+R11
+R12
+!s100 lObMnJZeU4B;GESVE9eGO0
+!i10b 1
+Etb_audio
+Z51 w1513005351
+Z52 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R1
+R2
+R3
+R4
+Z53 8C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd
+Z54 FC:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd
+l0
+L8
+Vi<H]V7oJ<0LONe@chCDO;1
+R7
+32
+Z55 !s108 1513006251.509000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd|
+Z57 !s107 C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd|
+R11
+R12
+!s100 Oo7TOW7ESzG]>;JD^MCbO1
+!i10b 1
+Asim
+R52
+R1
+R2
+R3
+DEx4 work 8 tb_audio 0 22 i<H]V7oJ<0LONe@chCDO;1
+l62
+L11
+VJCC>0<i_^ei_;YCeAz?@b0
+R7
+32
+R55
+R56
+R57
+R11
+R12
+!s100 ]O?2f;DNVmRcCkPd]2E>71
+!i10b 1

@@ -1,0 +1,98 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\TSIU03\Lab1\MSim
+T_opt
+VOJ7@HK=cJOzfGJ^c6]Ae40
+Z1 04 10 3 work lab2_kb_tb sim 1
+=1-90e2ba14904d-59b9811f-1b6-15fc
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z3 OL;O;10.1b;51
+T_opt1
+VCkbgknV0APXRH@3Raz3f:1
+04 7 3 work lab2_kb rtl 1
+=7-90e2ba1490ac-59ad7f92-35d-15dc
+R2
+n@_opt1
+R3
+Z4 dH:\TSIU03\Lab1\MSim
+T_opt2
+Vf@j2?z]5hB90L@[4miZCF0
+R1
+=1-90e2ba14904d-59b97051-29d-17d4
+o-quiet -auto_acc_if_foreign -work work
+n@_opt2
+R3
+R4
+Elab2_kb
+Z5 w1505324113
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dH:\TSIU03\Lab2\MSim
+Z9 8H:/TSIU03/Lab2/Lab2_KB.vhd
+Z10 FH:/TSIU03/Lab2/Lab2_KB.vhd
+l0
+L4
+V5U5VS3<ATHK3MJTckBS<93
+Z11 OL;C;10.1b;51
+32
+Z12 !s108 1505329424.338000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab2/Lab2_KB.vhd|
+Z14 !s107 H:/TSIU03/Lab2/Lab2_KB.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+!s100 mD4mO0OBoBO>h<BaN0KCe3
+!i10b 1
+Artl
+R6
+R7
+DEx4 work 7 lab2_kb 0 22 5U5VS3<ATHK3MJTckBS<93
+l15
+L11
+VD?jjPdI;=YOT@QGA>M?P20
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 f^0YRab4B]PA94<0@IR<Y2
+!i10b 1
+Elab2_kb_tb
+Z17 w1505329409
+R6
+R7
+R8
+Z18 8H:/TSIU03/Lab2/Lab2_KB_TB.vhd
+Z19 FH:/TSIU03/Lab2/Lab2_KB_TB.vhd
+l0
+L6
+VX9m=81ijAR>gQMEb:AF=a2
+R11
+32
+Z20 !s108 1505329426.118000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab2/Lab2_KB_TB.vhd|
+Z22 !s107 H:/TSIU03/Lab2/Lab2_KB_TB.vhd|
+R15
+R16
+!s100 iBJEQIO<hj^YhYVgzFnIe1
+!i10b 1
+Asim
+R6
+R7
+DEx4 work 10 lab2_kb_tb 0 22 X9m=81ijAR>gQMEb:AF=a2
+l22
+L9
+Vh1b53Yb0O;nbN4Ylf=FP<0
+R11
+32
+R20
+R21
+R22
+R15
+R16
+!s100 XJ[eA:TOhlm;C^DG4oTO12
+!i10b 1

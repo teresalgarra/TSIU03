@@ -1,0 +1,589 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0
+T_opt
+VIG9BL]Wk?Z?5ei]B9adIH0
+04 6 3 work tb_top sim 1
+=3-90e2ba1a0126-5a2e9393-3d5-1d6c
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1b;51
+T_opt1
+V=z75a5X3Ra:bQiaHdi6bX3
+04 12 3 work pixelcounter rtl 1
+=1-90e2ba1a0126-5a2e8d91-313-1c90
+R1
+n@_opt1
+R2
+Z3 dH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0
+Eblank_syncr
+Z4 w1512389485
+Z5 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_syncr.vhd
+Z9 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_syncr.vhd
+l0
+L5
+Vl4<Hoj;LO@ETz2O;^ej_B2
+Z10 OL;C;10.1b;51
+32
+Z11 !s108 1512996581.005000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_syncr.vhd|
+Z13 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_syncr.vhd|
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1
+!s100 8bU?]Kd<P@A4F5f6_jo6d1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 blank_syncr 0 22 l4<Hoj;LO@ETz2O;^ej_B2
+l13
+L12
+VY04KX>58UJIj8jFk0Ljn42
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 C5mn0Rk=S`aVBLSI6L<dS1
+!i10b 1
+Eblank_video
+Z16 w1512389265
+R5
+R6
+R7
+R3
+Z17 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_video.vhd
+Z18 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_video.vhd
+l0
+L5
+VGXSKE@l>;SI<VVPiJ5O^G2
+R10
+32
+Z19 !s108 1512996583.305000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_video.vhd|
+Z21 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/blank_video.vhd|
+R14
+R15
+!s100 ]PL6SaJHFNBzm8C>Nln6W3
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 blank_video 0 22 GXSKE@l>;SI<VVPiJ5O^G2
+l12
+L11
+VA98i<zI09m^eEGTO9H>mc1
+R10
+32
+R19
+R20
+R21
+R14
+R15
+!s100 JIf;=`;mKAF6GU<lCdE6Z3
+!i10b 1
+Eclock_gen
+Z22 w1505318484
+R5
+R6
+R7
+R3
+Z23 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/clock_gen.vhd
+Z24 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/clock_gen.vhd
+l0
+L5
+VHEZF75m=hR<kVHRTP15?D3
+R10
+32
+Z25 !s108 1512996585.555000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/clock_gen.vhd|
+Z27 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/clock_gen.vhd|
+R14
+R15
+!s100 _JA@REgU__eo>i]6BadOS0
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 9 clock_gen 0 22 HEZF75m=hR<kVHRTP15?D3
+l13
+L10
+VgmXkX@cnOlA?an5G@RQ5V3
+R10
+32
+R25
+R26
+R27
+R14
+R15
+!s100 IV8i^E=MRZE5O=XkJi0G_3
+!i10b 1
+Egroup_no
+Z28 w1441178222
+R6
+R7
+R3
+Z29 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/group_no.vhd
+Z30 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/group_no.vhd
+l0
+L7
+V`8kKI3`WTeQbzbm56fQFA3
+R10
+32
+Z31 !s108 1512996587.925000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/group_no.vhd|
+Z33 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/group_no.vhd|
+R14
+R15
+!s100 UJXobCL?NB3?5oGOWTR8e0
+!i10b 1
+Afoo
+R6
+R7
+DEx4 work 8 group_no 0 22 `8kKI3`WTeQbzbm56fQFA3
+l14
+L12
+VlJ6L[:;CelmcT<N3:DFeO3
+R10
+32
+R31
+R32
+R33
+R14
+R15
+!s100 T<J4cS<RI;MoUO:1;:3:`1
+!i10b 1
+Ehsyncr
+Z34 w1512388894
+R5
+R6
+R7
+R3
+Z35 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/hsyncr.vhd
+Z36 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/hsyncr.vhd
+l0
+L5
+VTTFCz>z1lJO35z@ijUL9L2
+R10
+32
+Z37 !s108 1512996590.255000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/hsyncr.vhd|
+Z39 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/hsyncr.vhd|
+R14
+R15
+!s100 99cP;U[:BP?T99ElH6GWD0
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 6 hsyncr 0 22 TTFCz>z1lJO35z@ijUL9L2
+l14
+L12
+Vn@BL45[:Jn692gLKVo0J22
+R10
+32
+R37
+R38
+R39
+R14
+R15
+!s100 5I62OC0fR]3hDgJ`<]_5M2
+!i10b 1
+Elinecounter
+Z40 w1512388313
+R5
+R6
+R7
+R3
+Z41 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/linecounter.vhd
+Z42 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/linecounter.vhd
+l0
+L35
+VR:jiKfP^23;>hHzi`R0<g3
+R10
+32
+Z43 !s108 1512996592.525000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/linecounter.vhd|
+Z45 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/linecounter.vhd|
+R14
+R15
+!s100 ^Qe0QNXH@97@Af:c4X?5j1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 linecounter 0 22 R:jiKfP^23;>hHzi`R0<g3
+l44
+L41
+VcA5o_NX1iW9DPVf6ON]N>2
+R10
+32
+R43
+R44
+R45
+R14
+R15
+!s100 6ih_Hj01n<LXEVgR=[^l83
+!i10b 1
+Epixel_reg
+Z46 w1512389745
+R5
+R6
+R7
+R3
+Z47 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixel_reg.vhd
+Z48 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixel_reg.vhd
+l0
+L6
+V=DG60HT9=mG[dmWNI9SXO3
+R10
+32
+Z49 !s108 1512996595.005000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixel_reg.vhd|
+Z51 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixel_reg.vhd|
+R14
+R15
+!s100 UilRdcK[g;?WXDz0TPa8N1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 9 pixel_reg 0 22 =DG60HT9=mG[dmWNI9SXO3
+l17
+L15
+VQ6J=4D>;07aW>XZn7=?nK0
+R10
+32
+R49
+R50
+R51
+R14
+R15
+!s100 XJHLQn?DHbFVVTa[co[CJ1
+!i10b 1
+Epixelcounter
+Z52 w1513001857
+R5
+R6
+R7
+R3
+Z53 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixelcounter.vhd
+Z54 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixelcounter.vhd
+l0
+L5
+V1UmHH_cKcGO_ngzE>__?02
+R10
+32
+Z55 !s108 1513001867.051000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixelcounter.vhd|
+Z57 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\pixelcounter.vhd|
+R14
+R15
+!s100 zFBd7cCg;_VJefEWPeB7P2
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 12 pixelcounter 0 22 1UmHH_cKcGO_ngzE>__?02
+l13
+L11
+Vz@k6T3CIi4:Y;;XY`=7MI0
+R10
+32
+R55
+R56
+R57
+R14
+R15
+!s100 SN<deQ2?GiLdN:SN?PlEl2
+!i10b 1
+Epll
+Z58 w1505131444
+R6
+R7
+R3
+Z59 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/PLL.vhd
+Z60 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/PLL.vhd
+l0
+L10
+V0[:TU@NBAZ6C6Z=C0J3Z>0
+R10
+32
+Z61 !s108 1512996599.645000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/PLL.vhd|
+Z63 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/PLL.vhd|
+R14
+R15
+!s100 1Mcj;Cnn:Vbdme1oeCWh63
+!i10b 1
+Asyn
+R6
+R7
+DEx4 work 3 pll 0 22 0[:TU@NBAZ6C6Z=C0J3Z>0
+l24
+L21
+VcVNoa<laU?GIKXZ<zP5;D2
+R10
+32
+R61
+R62
+R63
+R14
+R15
+!s100 oR2LMjide`HnLU68]kG`m1
+!i10b 1
+Eram_control
+Z64 w1512389978
+R5
+R6
+R7
+R3
+Z65 8H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/RAM_control.vhd
+Z66 FH:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/RAM_control.vhd
+l0
+L62
+VX>1kBfI`Md8o:Cb^]30m;2
+R10
+32
+Z67 !s108 1512996602.025000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/RAM_control.vhd|
+Z69 !s107 H:/TSIU03/Lab3/Lab3_VGA2.0/Lab3_VGA2.0/RAM_control.vhd|
+R14
+R15
+!s100 6f1maQgI<;JIMB_9jFzJP3
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 ram_control 0 22 X>1kBfI`Md8o:Cb^]30m;2
+l74
+L73
+V9Q>bm>dKRG>Ec8_JjLj9;2
+R10
+32
+R67
+R68
+R69
+R14
+R15
+!s100 N8o_4U^cK3gS2SMQ?O[J;0
+!i10b 1
+Etb_sram
+Z70 w1511866119
+R5
+R6
+R7
+R3
+Z71 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_SRAM.vhd
+Z72 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_SRAM.vhd
+l0
+L5
+VhGMEk8TTFPDlUn^D43m:m2
+R10
+32
+Z73 !s108 1512996604.405000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_SRAM.vhd|
+Z75 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_SRAM.vhd|
+R14
+R15
+!s100 H<G9SbifPUV09509VHR840
+!i10b 1
+Asim
+R5
+R6
+R7
+DEx4 work 7 tb_sram 0 22 hGMEk8TTFPDlUn^D43m:m2
+l17
+L15
+V<U]ZbzGmHXcAl7DJL0DPh1
+R10
+32
+R73
+R74
+R75
+R14
+R15
+!s100 b_EKnU6l^3][?_TQ28gon1
+!i10b 1
+Etb_top
+Z76 w1512996574
+R5
+R6
+R7
+R3
+Z77 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_top.vhd
+Z78 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_top.vhd
+l0
+L7
+VfK:iINF0jeA?6U7QSOL_N1
+R10
+32
+Z79 !s108 1512996606.885000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_top.vhd|
+Z81 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\TB_top.vhd|
+R14
+R15
+!s100 VUYdAKGJG2hOkeh3XV_o;1
+!i10b 1
+Asim
+R5
+R6
+R7
+DEx4 work 6 tb_top 0 22 fK:iINF0jeA?6U7QSOL_N1
+l54
+L10
+Va7hbUa1ge8:D7HTOzV]Y11
+R10
+32
+R79
+R80
+R81
+R14
+R15
+!s100 5X_dONSOl@bO3aF1eB>;00
+!i10b 1
+Evga_contr
+Z82 w1512996481
+R5
+R6
+R7
+R3
+Z83 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\VGA_contr.vhd
+Z84 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\VGA_contr.vhd
+l0
+L26
+V=bX`ZLUHcT5iDTW7C0BcP1
+R10
+32
+Z85 !s108 1512996609.385000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\VGA_contr.vhd|
+Z87 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\VGA_contr.vhd|
+R14
+R15
+!s100 1ke^N11Ak=WCODXX;0PHM0
+!i10b 1
+Abdf_type
+R5
+R6
+R7
+Z88 DEx4 work 9 vga_contr 0 22 =bX`ZLUHcT5iDTW7C0BcP1
+l166
+L52
+V8mEHTIIz>QC8@An[G3n2:0
+R10
+32
+R85
+R86
+R87
+R14
+R15
+!s100 O:LO<X<jW4gzX`b^gM`?43
+!i10b 1
+Aarch
+R5
+R6
+R7
+R88
+l166
+L52
+V`hNEUCfh78K3hM;A25;C?3
+R10
+32
+R86
+R87
+R14
+R15
+w1512996089
+!s108 1512996098.051000
+!s100 _F@3E^76]5o6^ZTKL1m<W1
+!i10b 1
+Evga_gen
+Z89 w1512997854
+R5
+R6
+R7
+R3
+Z90 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vga_gen.vhd
+Z91 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vga_gen.vhd
+l0
+L5
+VZ5Tja_<F?odc1?@M@;gK40
+R10
+32
+Z92 !s108 1512998014.813000
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vga_gen.vhd|
+Z94 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vga_gen.vhd|
+R14
+R15
+!s100 <mbkckPiSCmREOnGm26;K1
+!i10b 1
+Aarch
+R5
+R6
+R7
+DEx4 work 7 vga_gen 0 22 Z5Tja_<F?odc1?@M@;gK40
+l17
+L16
+VF1;RV]3n>3LTjoMRNFJo?3
+R10
+32
+R92
+R93
+R94
+R14
+R15
+!s100 fg80L>=bD6SXAh2N>Yf9f2
+!i10b 1
+Evsyncr
+Z95 w1512389077
+R5
+R6
+R7
+R3
+Z96 8H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vsyncr.vhd
+Z97 FH:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vsyncr.vhd
+l0
+L5
+Va5e:FDeazglE9TAEIR1kL0
+R10
+32
+Z98 !s108 1512996614.395000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vsyncr.vhd|
+Z100 !s107 H:\TSIU03\Lab3\Lab3_VGA2.0\Lab3_VGA2.0\vsyncr.vhd|
+R14
+R15
+!s100 jd4o5RJWYdo2g^AIfz20]0
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 6 vsyncr 0 22 a5e:FDeazglE9TAEIR1kL0
+l13
+L12
+VRHNIQf20<;8XX2UF0CL2;2
+R10
+32
+R98
+R99
+R100
+R14
+R15
+!s100 cj;?Q87UlH1cEASASe0DC3
+!i10b 1

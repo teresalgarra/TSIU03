@@ -1,0 +1,49 @@
+H:/TSIU03/Lab2/Lab2_KB.vhd {1 {vcom -work work -2002 -explicit -vopt H:/TSIU03/Lab2/Lab2_KB.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Lab2_KB
+-- Compiling architecture rtl of Lab2_KB
+
+} {} {}} H:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd {2 {vcom -work work -2002 -explicit -vopt {H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd}
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Lab2_KB_TB
+-- Compiling architecture sim of Lab2_KB_TB
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(39): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(47): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(66): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(66): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] H:\TSIU03\Lab2\MSim\Lab2_KB_TB.vhd(67): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}
