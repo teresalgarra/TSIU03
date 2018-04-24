@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity 10cnt is
+	port (clk : in std_logic;
+			rstn : in std_logic;
+			enable : out std_logic;
+		);
+end 10cnt;
+
+architecture rt1 of 10cnt is
+signal 10counter : unsigned(3 downto 0);		
+signal enable_i : std_logic;
+begin
+	process(clk,rstn)
+	begin 
+	if (rstn = '0') then 
+	enable_i <= '0';
+	10counter <= "0000";
+	elsif rising_edge(clk) then
+	10counter <= 10counter + 1;
+		if (10counter = "1010") then
+			enable_i <= '1';
+			10counter <= "0000";
+		else
+			enable_i <= '0';
+		end if;
+	end if;
+	end process;
+enable <= enable_i;
+end rt1; 

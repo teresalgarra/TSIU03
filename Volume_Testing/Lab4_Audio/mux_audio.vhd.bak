@@ -1,0 +1,22 @@
+library IEEE;
+     use IEEE.STD_LOGIC_1164.all;
+
+     ENTITY mux IS
+        PORT(dacdat_in_left : IN std_logic_vector(15 DOWNTO 0); 
+				 dacdat_in_right : IN std_logic_vector(15 DOWNTO 0);
+             lrsel  : IN std_logic; 
+             dacdat_out : OUT std_logic_vector(15 DOWNTO 0));
+     END mux;
+
+     ARCHITECTURE synth OF mux IS
+     BEGIN
+
+       PROCESS(lrsel) IS
+       BEGIN
+         if lrsel = '0' then
+		   dacdat_out <= dacdat_in_left;
+         else
+			dacdat_out <= dacdat_in_right;
+         end if;
+       END PROCESS;
+     END synth;

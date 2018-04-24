@@ -1,0 +1,113 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+--
+--entity ctrl is
+--    port (rstn,clk: in std_logic;
+--	 mclk,bclk,adclrc,daclrc,men: out std_logic;
+--	 Bitcnt: out std_logic_vector (3 downto 0);
+--	 SCCnt: out std_logic_vector (1 downto 0);
+--	 lrsel: out std_logic);
+--end entity;
+--
+--architecture arch of ctrl is
+--	signal cntr : unsigned(5 downto 0);
+--	signal cntr1 : std_logic_vector(1 downto 0);
+--	signal cntr2 : std_logic_vector(3 downto 0);
+--	signal cntr3 : std_logic;
+--	
+--begin
+--
+--	contador : process(rstn, clk) begin
+--		if rstn = '0' then
+--			cntr <= (others =>'0');
+--		elsif rising_edge(clk) then
+--			cntr <= cntr + 1;
+--		end if;
+--	end process;
+--	
+--	mclk <= NOT cntr(1);
+--	bclk <= cntr(3);
+--	men <= '1' WHEN cntr(1 downto 0) = "11" ELSE '0';
+--	cntr1(1 downto 0) <= std_logic_vector(cntr(3 downto 2));
+--	SCCnt <= cntr1(1 downto 0);
+--	cntr2(3 downto 0) <= std_logic_vector(cntr(5 downto 2));
+--	Bitcnt <= cntr2(3 downto 0);
+--	cntr3 <= std_logic(cntr(5));
+--	adclrc <= NOT cntr3;
+--	daclrc <= NOT cntr3;
+--	lrsel <= cntr3;	
+--	
+--end architecture;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Ctrl is 
+	port( clk, rstn : in std_logic;
+			mclk, bclk, adclrc, daclrc, lrsel : out std_logic;
+			men : out std_logic;
+			SCCnt : out unsigned (1 downto 0);
+			BitCnt : out unsigned (4 downto 0));
+end Ctrl;
+
+architecture arch of Ctrl is 
+	signal cntr : unsigned (9 downto 0);
+	signal SCCnt_temp : unsigned (1 downto 0);
+	signal BitCnt_temp : unsigned (4 downto 0);
+
+begin
+
+	process(clk,rstn)
+		begin
+			if rstn = '0' then	
+				cntr <= (others => '0');
+				men <= '0';
+				SCCnt_temp <= "00";
+				BitCnt_temp <= "00000";
+			elsif rising_edge(clk) then
+				cntr <= cntr + 1;
+				
+				if (cntr(0) AND cntr(1)) = '1' then -- when cntr is at 3, 7, 11... men goes to 1
+					men <= '1';
+				else 
+					men <= '0';
+				end if;
+				
+				if (cntr(0) OR cntr(1)) = '0' then
+					SCCnt_temp <= SCCnt_temp + 1;
+				end if;
+				
+				if cntr = "0000000000" then
+					SCCnt_temp <= "00";
+				end if;
+				
+				if (cntr(0) or cntr(1) or cntr(2) or cntr(3)) = '0' then
+					BitCnt_temp <= BitCnt_temp + 1;
+				end if;
+				
+				if (cntr = "0000000000") then
+					BitCnt_temp <= "00000";
+				end if;
+				
+				if (cntr >= "0000000000" and cntr < "1000000000") then 
+					adclrc <= '1';
+					daclrc <= '1';
+					lrsel <= '0';
+				else
+					adclrc <= '0';
+					daclrc <= '0';
+					lrsel <= '1';
+				end if;
+			
+			end if;
+	end process;
+	
+	SCCnt <= SCCnt_temp;
+	BitCnt <= BitCnt_temp;
+				 
+	mclk <= not cntr (1); 
+	bclk <= cntr (3); 
+	
+end arch;

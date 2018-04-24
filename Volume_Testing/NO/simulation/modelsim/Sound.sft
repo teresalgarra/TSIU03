@@ -1,0 +1,5 @@
+set tool_name "ModelSim (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {Sound.vho Sound_vhd.sdo}}
+	{{"Fast Model"} {Sound_fast.vho Sound_vhd_fast.sdo}}
+}

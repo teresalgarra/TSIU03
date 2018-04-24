@@ -1,0 +1,427 @@
+Analysis & Synthesis report for VGA_contr
+Tue Oct 31 15:04:12 2017
+Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: group_no:inst2
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                           ;
++------------------------------------+---------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Oct 31 15:04:12 2017             ;
+; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
+; Revision Name                      ; VGA_contr                                         ;
+; Top-level Entity Name              ; VGA_contr                                         ;
+; Family                             ; Cyclone IV E                                      ;
+; Total logic elements               ; 351                                               ;
+;     Total combinational functions  ; 317                                               ;
+;     Dedicated logic registers      ; 109                                               ;
+; Total registers                    ; 109                                               ;
+; Total pins                         ; 52                                                ;
+; Total virtual pins                 ; 0                                                 ;
+; Total memory bits                  ; 0                                                 ;
+; Embedded Multiplier 9-bit elements ; 0                                                 ;
+; Total PLLs                         ; 0                                                 ;
++------------------------------------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; VGA_contr          ; VGA_contr          ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
+; Scancode_control.vhd             ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/Scancode_control.vhd ;         ;
+; setting_decoder.vhd              ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/setting_decoder.vhd  ;         ;
+; VGA_contr.bdf                    ; yes             ; User Block Diagram/Schematic File  ; U:/es/projects/projgroup78/Lab3_VGA/VGA_contr.bdf        ;         ;
+; pixelcounter.vhd                 ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/pixelcounter.vhd     ;         ;
+; hsyncr.vhd                       ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/hsyncr.vhd           ;         ;
+; linecounter.vhd                  ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/linecounter.vhd      ;         ;
+; vsyncr.vhd                       ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/vsyncr.vhd           ;         ;
+; blank_video.vhd                  ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/blank_video.vhd      ;         ;
+; blank_syncr.vhd                  ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/blank_syncr.vhd      ;         ;
+; pixel_reg.vhd                    ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/pixel_reg.vhd        ;         ;
+; vga_gen.vhd                      ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/vga_gen.vhd          ;         ;
+; group_no.vhd                     ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/group_no.vhd         ;         ;
+; PLL.vhd                          ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/PLL.vhd              ;         ;
+; screen_control.vhd               ; yes             ; User VHDL File                     ; U:/es/projects/projgroup78/Lab3_VGA/screen_control.vhd   ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 351   ;
+;                                             ;       ;
+; Total combinational functions               ; 317   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 206   ;
+;     -- 3 input functions                    ; 64    ;
+;     -- <=2 input functions                  ; 47    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 299   ;
+;     -- arithmetic mode                      ; 18    ;
+;                                             ;       ;
+; Total registers                             ; 109   ;
+;     -- Dedicated logic registers            ; 109   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 52    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out                             ; 110   ;
+; Total fan-out                               ; 1540  ;
+; Average fan-out                             ; 2.91  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+; |VGA_contr                   ; 317 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |VGA_contr                         ;              ;
+;    |PLL:inst4|               ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|PLL:inst4               ;              ;
+;    |Scancode_control:inst11| ; 91 (91)           ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|Scancode_control:inst11 ;              ;
+;    |blank_syncr:inst18|      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_syncr:inst18      ;              ;
+;    |blank_video:inst17|      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_video:inst17      ;              ;
+;    |hsyncr:inst12|           ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|hsyncr:inst12           ;              ;
+;    |linecounter:inst|        ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|linecounter:inst        ;              ;
+;    |pixel_reg:inst1|         ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:inst1         ;              ;
+;    |pixelcounter:inst6|      ; 14 (14)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixelcounter:inst6      ;              ;
+;    |screen_control:inst5|    ; 130 (130)         ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|screen_control:inst5    ;              ;
+;    |setting_decoder:inst7|   ; 33 (33)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|setting_decoder:inst7   ;              ;
+;    |vga_gen:inst19|          ; 17 (17)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|vga_gen:inst19          ;              ;
+;    |vsyncr:inst13|           ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|vsyncr:inst13           ;              ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                              ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance      ; IP Include File                             ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------+
+; Altera ; ALTPLL       ; 12.1    ; N/A          ; N/A          ; |VGA_contr|PLL:inst4 ; U:/es/projects/projgroup78/Lab3_VGA/PLL.vhd ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++---------------------------------------+-----------------------------------------------+
+; Register name                         ; Reason for Removal                            ;
++---------------------------------------+-----------------------------------------------+
+; screen_control:inst5|rgb_datai[1]     ; Merged with screen_control:inst5|rgb_datai[0] ;
+; screen_control:inst5|rgb_datai[4]     ; Merged with screen_control:inst5|rgb_datai[3] ;
+; pixel_reg:inst1|pixrgi[4]             ; Merged with pixel_reg:inst1|pixrgi[3]         ;
+; pixel_reg:inst1|pixrgi[1]             ; Merged with pixel_reg:inst1|pixrgi[0]         ;
+; screen_control:inst5|rgb_datai[7]     ; Stuck at VCC due to stuck port data_in        ;
+; Total Number of Removed Registers = 5 ;                                               ;
++---------------------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 109   ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 52    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 60    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; hsyncr:inst12|hsync                    ; 3       ;
+; vsyncr:inst13|vsync                    ; 2       ;
+; setting_decoder:inst7|settings_b[2]    ; 12      ;
+; setting_decoder:inst7|settings_b[0]    ; 17      ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|Scancode_control:inst11|shiftreg_counter[1] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |VGA_contr|linecounter:inst|vcnti[5]                   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 3 LEs                ; 6 LEs                  ; Yes        ; |VGA_contr|setting_decoder:inst7|settings_v[2]         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|setting_decoder:inst7|settings_b[1]         ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |VGA_contr|Scancode_control:inst11|Setting_ID_buf[0]   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: group_no:inst2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; number         ; 99    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+    Info: Processing started: Tue Oct 31 15:03:52 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_contr -c VGA_contr
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file scancode_control.vhd
+    Info (12022): Found design unit 1: Scancode_control-arch
+    Info (12023): Found entity 1: Scancode_control
+Info (12021): Found 2 design units, including 1 entities, in source file setting_decoder.vhd
+    Info (12022): Found design unit 1: setting_decoder-rtl
+    Info (12023): Found entity 1: setting_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file vga_contr.bdf
+    Info (12023): Found entity 1: VGA_contr
+Info (12021): Found 2 design units, including 1 entities, in source file pixelcounter.vhd
+    Info (12022): Found design unit 1: pixelcounter-rtl
+    Info (12023): Found entity 1: pixelcounter
+Info (12021): Found 2 design units, including 1 entities, in source file hsyncr.vhd
+    Info (12022): Found design unit 1: hsyncr-rtl
+    Info (12023): Found entity 1: hsyncr
+Info (12021): Found 2 design units, including 1 entities, in source file linecounter.vhd
+    Info (12022): Found design unit 1: linecounter-rtl
+    Info (12023): Found entity 1: linecounter
+Info (12021): Found 2 design units, including 1 entities, in source file vsyncr.vhd
+    Info (12022): Found design unit 1: vsyncr-rtl
+    Info (12023): Found entity 1: vsyncr
+Info (12021): Found 2 design units, including 1 entities, in source file blank_video.vhd
+    Info (12022): Found design unit 1: blank_video-rtl
+    Info (12023): Found entity 1: blank_video
+Info (12021): Found 2 design units, including 1 entities, in source file blank_syncr.vhd
+    Info (12022): Found design unit 1: blank_syncr-rtl
+    Info (12023): Found entity 1: blank_syncr
+Info (12021): Found 2 design units, including 1 entities, in source file pixel_reg.vhd
+    Info (12022): Found design unit 1: pixel_reg-rtl
+    Info (12023): Found entity 1: pixel_reg
+Info (12021): Found 2 design units, including 1 entities, in source file vga_gen.vhd
+    Info (12022): Found design unit 1: vga_gen-behave
+    Info (12023): Found entity 1: vga_gen
+Info (12021): Found 2 design units, including 1 entities, in source file clock_gen.vhd
+    Info (12022): Found design unit 1: clock_gen-rtl
+    Info (12023): Found entity 1: clock_gen
+Info (12021): Found 2 design units, including 1 entities, in source file group_no.vhd
+    Info (12022): Found design unit 1: group_no-foo
+    Info (12023): Found entity 1: group_no
+Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
+    Info (12022): Found design unit 1: pll-SYN
+    Info (12023): Found entity 1: PLL
+Info (12021): Found 2 design units, including 1 entities, in source file screen_control.vhd
+    Info (12022): Found design unit 1: screen_control-rtl
+    Info (12023): Found entity 1: screen_control
+Info (12127): Elaborating entity "VGA_contr" for the top level hierarchy
+Info (12128): Elaborating entity "hsyncr" for hierarchy "hsyncr:inst12"
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:inst4"
+Warning (10492): VHDL Process Statement warning at PLL.vhd(28): signal "areset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "pixelcounter" for hierarchy "pixelcounter:inst6"
+Info (12128): Elaborating entity "vsyncr" for hierarchy "vsyncr:inst13"
+Info (12128): Elaborating entity "linecounter" for hierarchy "linecounter:inst"
+Info (12128): Elaborating entity "vga_gen" for hierarchy "vga_gen:inst19"
+Info (12128): Elaborating entity "blank_syncr" for hierarchy "blank_syncr:inst18"
+Info (12128): Elaborating entity "blank_video" for hierarchy "blank_video:inst17"
+Info (12128): Elaborating entity "pixel_reg" for hierarchy "pixel_reg:inst1"
+Info (12128): Elaborating entity "screen_control" for hierarchy "screen_control:inst5"
+Info (12128): Elaborating entity "setting_decoder" for hierarchy "setting_decoder:inst7"
+Warning (10631): VHDL Process Statement warning at setting_decoder.vhd(23): inferring latch(es) for signal or variable "settings_data", which holds its previous value in one or more paths through the process
+Info (12128): Elaborating entity "Scancode_control" for hierarchy "Scancode_control:inst11"
+Info (12128): Elaborating entity "group_no" for hierarchy "group_no:inst2"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "vga_sync" is stuck at GND
+    Warning (13410): Pin "LEDG8" is stuck at VCC
+    Warning (13410): Pin "HEX6[0]" is stuck at GND
+    Warning (13410): Pin "HEX6[1]" is stuck at GND
+    Warning (13410): Pin "HEX6[2]" is stuck at GND
+    Warning (13410): Pin "HEX6[3]" is stuck at GND
+    Warning (13410): Pin "HEX6[4]" is stuck at VCC
+    Warning (13410): Pin "HEX6[5]" is stuck at GND
+    Warning (13410): Pin "HEX6[6]" is stuck at GND
+    Warning (13410): Pin "HEX7[0]" is stuck at GND
+    Warning (13410): Pin "HEX7[1]" is stuck at GND
+    Warning (13410): Pin "HEX7[2]" is stuck at GND
+    Warning (13410): Pin "HEX7[3]" is stuck at GND
+    Warning (13410): Pin "HEX7[4]" is stuck at VCC
+    Warning (13410): Pin "HEX7[5]" is stuck at GND
+    Warning (13410): Pin "HEX7[6]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 405 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 353 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 490 megabytes
+    Info: Processing ended: Tue Oct 31 15:04:12 2017
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:05
+
+

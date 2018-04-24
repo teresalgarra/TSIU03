@@ -1,0 +1,15 @@
+# Current time Mon Sep 25 16:49:50 2017
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.1b"
+# Version = "2012.04"
+# Date = "Apr 27 2012"
+# Platform = win64
+
+Exception c0000005 has occurred at address 401ae462. Traceback:
+# 0    0x401ae462: 'Mtirpc_Init + 0xda042'
+# 1    0x02b61198: '<unknown (@0x2b61198)>'
+# 2    0x0bec52f0: '<unknown (@0xbec52f0)>'
+StackWalk failed 487
+# End of Stack Trace
+

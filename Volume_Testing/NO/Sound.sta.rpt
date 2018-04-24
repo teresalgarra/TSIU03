@@ -1,0 +1,1331 @@
+TimeQuest Timing Analyzer report for Sound
+Thu Mar 15 15:27:39 2018
+Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'clk'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Fast Model Setup Summary
+ 17. Fast Model Hold Summary
+ 18. Fast Model Recovery Summary
+ 19. Fast Model Removal Summary
+ 20. Fast Model Minimum Pulse Width Summary
+ 21. Fast Model Minimum Pulse Width: 'clk'
+ 22. Setup Times
+ 23. Hold Times
+ 24. Clock to Output Times
+ 25. Minimum Clock to Output Times
+ 26. Multicorner Timing Analysis Summary
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Clock Transfers
+ 32. Report TCCS
+ 33. Report RSKM
+ 34. Unconstrained Paths
+ 35. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                        ;
++--------------------+---------------------------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version ;
+; Revision Name      ; Sound                                                               ;
+; Device Family      ; Cyclone II                                                          ;
+; Device Name        ; EP2C35F672C6                                                        ;
+; Timing Models      ; Final                                                               ;
+; Delay Model        ; Combined                                                            ;
+; Rise/Fall Delays   ; Unavailable                                                         ;
++--------------------+---------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -85.380               ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[16]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[16]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[17]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[17]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[18]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[18]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[19]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[19]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[1]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[1]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[20]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[20]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[21]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[21]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[22]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[22]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[23]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[23]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[24]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[24]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[25]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[25]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[26]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[26]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[27]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[27]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[28]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[28]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[29]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[29]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[2]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[2]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[30]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[30]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[31]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[31]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[32]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[32]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[33]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[33]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[34]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[34]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[35]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[35]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[36]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[36]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[37]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[37]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[38]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[38]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[39]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[39]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[3]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[3]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[40]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[40]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[41]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[41]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[4]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[4]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[5]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[5]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[6]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[6]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[7]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[7]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[8]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[8]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[9]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[9]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[16]~reg0 ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+
+
++-------------------------------------------------------------------------------+
+; Setup Times                                                                   ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; 66.041 ; 66.041 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; 65.659 ; 65.659 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; 65.882 ; 65.882 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; 66.041 ; 66.041 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; 65.499 ; 65.499 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; 65.605 ; 65.605 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; 65.123 ; 65.123 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; 65.411 ; 65.411 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; 65.641 ; 65.641 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; 65.975 ; 65.975 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; 65.199 ; 65.199 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; 65.278 ; 65.278 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; 65.326 ; 65.326 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; 65.316 ; 65.316 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; 65.523 ; 65.523 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; 65.275 ; 65.275 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; 65.579 ; 65.579 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; 66.347 ; 66.347 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; 65.977 ; 65.977 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; 65.937 ; 65.937 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; 65.978 ; 65.978 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; 65.876 ; 65.876 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; 65.473 ; 65.473 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; 65.813 ; 65.813 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; 65.889 ; 65.889 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; 65.709 ; 65.709 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; 65.989 ; 65.989 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; 66.347 ; 66.347 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; 66.070 ; 66.070 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; 65.624 ; 65.624 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; 65.933 ; 65.933 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; 65.832 ; 65.832 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; 65.855 ; 65.855 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; 65.913 ; 65.913 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; 66.257 ; 66.257 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; 66.257 ; 66.257 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; 66.083 ; 66.083 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; 65.966 ; 65.966 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; 66.100 ; 66.100 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; -7.263 ; -7.263 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; -7.703 ; -7.703 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; -8.022 ; -8.022 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; -8.181 ; -8.181 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; -7.639 ; -7.639 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; -7.745 ; -7.745 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; -7.263 ; -7.263 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; -7.551 ; -7.551 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; -7.781 ; -7.781 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; -8.115 ; -8.115 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; -7.339 ; -7.339 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; -7.418 ; -7.418 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; -7.466 ; -7.466 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; -7.456 ; -7.456 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; -7.663 ; -7.663 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; -7.415 ; -7.415 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; -7.719 ; -7.719 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; -6.894 ; -6.894 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; -7.398 ; -7.398 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; -7.358 ; -7.358 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; -7.399 ; -7.399 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; -7.297 ; -7.297 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; -6.894 ; -6.894 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; -7.234 ; -7.234 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; -7.310 ; -7.310 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; -7.130 ; -7.130 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; -7.410 ; -7.410 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; -7.768 ; -7.768 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; -7.491 ; -7.491 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; -7.045 ; -7.045 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; -7.354 ; -7.354 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; -7.253 ; -7.253 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; -7.276 ; -7.276 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; -7.334 ; -7.334 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; -7.387 ; -7.387 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; -7.678 ; -7.678 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; -7.504 ; -7.504 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; -7.387 ; -7.387 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; -7.521 ; -7.521 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 8.586 ; 8.586 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 7.971 ; 7.971 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 7.952 ; 7.952 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 7.724 ; 7.724 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 7.737 ; 7.737 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 7.367 ; 7.367 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 7.891 ; 7.891 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 7.845 ; 7.845 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 7.681 ; 7.681 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 7.357 ; 7.357 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 8.164 ; 8.164 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 7.605 ; 7.605 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 7.698 ; 7.698 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 8.586 ; 8.586 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 7.680 ; 7.680 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 7.693 ; 7.693 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 7.604 ; 7.604 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 6.055 ; 6.055 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 6.360 ; 6.360 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 6.058 ; 6.058 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 7.612 ; 7.612 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 6.347 ; 6.347 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 7.524 ; 7.524 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 6.551 ; 6.551 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 6.064 ; 6.064 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 7.714 ; 7.714 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 6.344 ; 6.344 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 6.515 ; 6.515 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 6.656 ; 6.656 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 6.367 ; 6.367 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 6.672 ; 6.672 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 6.404 ; 6.404 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 7.306 ; 7.306 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 7.310 ; 7.310 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 7.577 ; 7.577 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 7.913 ; 7.913 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 7.319 ; 7.319 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 7.242 ; 7.242 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 7.003 ; 7.003 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 7.455 ; 7.455 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 7.709 ; 7.709 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 7.153 ; 7.153 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 7.768 ; 7.768 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 7.557 ; 7.557 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 7.757 ; 7.757 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 7.548 ; 7.548 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 7.320 ; 7.320 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 7.901 ; 7.901 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 7.665 ; 7.665 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 7.037 ; 7.037 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 6.652 ; 6.652 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 6.663 ; 6.663 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 6.623 ; 6.623 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 6.455 ; 6.455 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 6.411 ; 6.411 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 7.249 ; 7.249 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 6.431 ; 6.431 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 7.036 ; 7.036 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 6.879 ; 6.879 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 6.641 ; 6.641 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 6.647 ; 6.647 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 7.043 ; 7.043 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 7.495 ; 7.495 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 6.658 ; 6.658 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 6.416 ; 6.416 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 6.643 ; 6.643 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 6.882 ; 6.882 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 7.355 ; 7.355 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 6.677 ; 6.677 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 6.055 ; 6.055 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 7.971 ; 7.971 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 7.952 ; 7.952 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 7.724 ; 7.724 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 7.737 ; 7.737 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 7.367 ; 7.367 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 7.891 ; 7.891 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 7.845 ; 7.845 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 7.681 ; 7.681 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 7.357 ; 7.357 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 8.164 ; 8.164 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 7.605 ; 7.605 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 7.698 ; 7.698 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 8.586 ; 8.586 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 7.680 ; 7.680 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 7.693 ; 7.693 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 7.604 ; 7.604 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 6.055 ; 6.055 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 6.360 ; 6.360 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 6.058 ; 6.058 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 7.612 ; 7.612 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 6.347 ; 6.347 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 7.524 ; 7.524 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 6.551 ; 6.551 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 6.064 ; 6.064 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 7.714 ; 7.714 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 6.344 ; 6.344 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 6.515 ; 6.515 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 6.656 ; 6.656 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 6.367 ; 6.367 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 6.672 ; 6.672 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 6.404 ; 6.404 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 6.411 ; 6.411 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 7.306 ; 7.306 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 7.310 ; 7.310 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 7.577 ; 7.577 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 7.913 ; 7.913 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 7.319 ; 7.319 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 7.242 ; 7.242 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 7.003 ; 7.003 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 7.455 ; 7.455 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 7.709 ; 7.709 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 7.153 ; 7.153 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 7.768 ; 7.768 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 7.557 ; 7.557 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 7.757 ; 7.757 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 7.548 ; 7.548 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 7.320 ; 7.320 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 7.901 ; 7.901 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 7.665 ; 7.665 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 7.037 ; 7.037 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 6.652 ; 6.652 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 6.663 ; 6.663 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 6.623 ; 6.623 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 6.455 ; 6.455 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 6.411 ; 6.411 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 7.249 ; 7.249 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 6.431 ; 6.431 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 7.036 ; 7.036 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 6.879 ; 6.879 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 6.641 ; 6.641 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 6.647 ; 6.647 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 7.043 ; 7.043 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 7.495 ; 7.495 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 6.658 ; 6.658 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 6.416 ; 6.416 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 6.643 ; 6.643 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 6.882 ; 6.882 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 7.355 ; 7.355 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 6.677 ; 6.677 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -85.380               ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[16]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[16]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[17]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[17]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[18]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[18]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[19]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[19]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[1]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[1]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[20]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[20]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[21]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[21]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[22]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[22]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[23]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[23]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[24]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[24]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[25]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[25]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[26]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[26]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[27]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[27]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[28]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[28]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[29]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[29]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[2]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[2]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[30]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[30]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[31]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[31]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[32]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[32]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[33]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[33]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[34]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[34]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[35]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[35]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[36]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[36]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[37]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[37]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[38]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[38]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[39]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[39]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[3]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[3]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[40]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[40]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[41]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[41]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[4]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[4]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[5]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[5]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[6]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[6]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[7]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[7]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[8]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[8]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; LDAC2[9]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; LDAC2[9]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[0]~reg0  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[10]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[11]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[12]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[13]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[14]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; RDAC2[15]~reg0 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; RDAC2[16]~reg0 ;
++--------+--------------+----------------+------------------+-------+------------+----------------+
+
+
++-------------------------------------------------------------------------------+
+; Setup Times                                                                   ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; 28.886 ; 28.886 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; 28.612 ; 28.612 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; 28.756 ; 28.756 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; 28.886 ; 28.886 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; 28.571 ; 28.571 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; 28.620 ; 28.620 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; 28.386 ; 28.386 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; 28.502 ; 28.502 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; 28.649 ; 28.649 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; 28.805 ; 28.805 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; 28.417 ; 28.417 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; 28.459 ; 28.459 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; 28.472 ; 28.472 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; 28.467 ; 28.467 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; 28.564 ; 28.564 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; 28.457 ; 28.457 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; 28.605 ; 28.605 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; 29.110 ; 29.110 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; 28.915 ; 28.915 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; 28.901 ; 28.901 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; 28.932 ; 28.932 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; 28.887 ; 28.887 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; 28.668 ; 28.668 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; 28.811 ; 28.811 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; 28.879 ; 28.879 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; 28.784 ; 28.784 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; 28.928 ; 28.928 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; 29.110 ; 29.110 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; 28.992 ; 28.992 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; 28.746 ; 28.746 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; 28.892 ; 28.892 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; 28.839 ; 28.839 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; 28.853 ; 28.853 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; 28.887 ; 28.887 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; 28.924 ; 28.924 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; 28.924 ; 28.924 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; 28.860 ; 28.860 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; 28.807 ; 28.807 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; 28.839 ; 28.839 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; -2.878 ; -2.878 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; -3.073 ; -3.073 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; -3.248 ; -3.248 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; -3.378 ; -3.378 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; -3.063 ; -3.063 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; -3.112 ; -3.112 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; -2.878 ; -2.878 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; -2.994 ; -2.994 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; -3.141 ; -3.141 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; -3.297 ; -3.297 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; -2.909 ; -2.909 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; -2.951 ; -2.951 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; -2.964 ; -2.964 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; -2.959 ; -2.959 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; -3.056 ; -3.056 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; -2.949 ; -2.949 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; -3.097 ; -3.097 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; -2.685 ; -2.685 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; -2.932 ; -2.932 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; -2.918 ; -2.918 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; -2.949 ; -2.949 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; -2.904 ; -2.904 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; -2.685 ; -2.685 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; -2.828 ; -2.828 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; -2.896 ; -2.896 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; -2.801 ; -2.801 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; -2.945 ; -2.945 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; -3.127 ; -3.127 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; -3.009 ; -3.009 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; -2.763 ; -2.763 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; -2.909 ; -2.909 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; -2.856 ; -2.856 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; -2.870 ; -2.870 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; -2.904 ; -2.904 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; -2.824 ; -2.824 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; -2.941 ; -2.941 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; -2.877 ; -2.877 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; -2.824 ; -2.824 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; -2.856 ; -2.856 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 4.763 ; 4.763 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 4.291 ; 4.291 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 4.185 ; 4.185 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 4.432 ; 4.432 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 4.419 ; 4.419 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 4.283 ; 4.283 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 4.311 ; 4.311 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 4.315 ; 4.315 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 4.135 ; 4.135 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 4.396 ; 4.396 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 4.344 ; 4.344 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 4.280 ; 4.280 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 4.253 ; 4.253 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 4.294 ; 4.294 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 4.763 ; 4.763 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 4.284 ; 4.284 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 4.297 ; 4.297 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 4.243 ; 4.243 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 4.153 ; 4.153 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 4.254 ; 4.254 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 3.572 ; 3.572 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 4.132 ; 4.132 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 4.139 ; 4.139 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 3.688 ; 3.688 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 3.446 ; 3.446 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 4.304 ; 4.304 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 3.571 ; 3.571 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 3.651 ; 3.651 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 3.744 ; 3.744 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 3.755 ; 3.755 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 3.618 ; 3.618 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 4.393 ; 4.393 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 4.239 ; 4.239 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 4.373 ; 4.373 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 4.103 ; 4.103 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 4.060 ; 4.060 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 4.154 ; 4.154 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 3.964 ; 3.964 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 4.387 ; 4.387 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 4.125 ; 4.125 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 4.216 ; 4.216 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 4.209 ; 4.209 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 4.106 ; 4.106 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 4.393 ; 4.393 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 4.261 ; 4.261 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 3.930 ; 3.930 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 3.782 ; 3.782 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 3.793 ; 3.793 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 3.685 ; 3.685 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 4.018 ; 4.018 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 3.878 ; 3.878 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 3.771 ; 3.771 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 3.780 ; 3.780 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 3.693 ; 3.693 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 4.115 ; 4.115 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 3.687 ; 3.687 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 3.665 ; 3.665 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 3.773 ; 3.773 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 3.879 ; 3.879 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 4.122 ; 4.122 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 4.291 ; 4.291 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 4.185 ; 4.185 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 4.432 ; 4.432 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 4.419 ; 4.419 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 4.283 ; 4.283 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 4.311 ; 4.311 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 4.315 ; 4.315 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 4.135 ; 4.135 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 4.396 ; 4.396 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 4.344 ; 4.344 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 4.280 ; 4.280 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 4.253 ; 4.253 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 4.294 ; 4.294 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 4.763 ; 4.763 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 4.284 ; 4.284 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 4.297 ; 4.297 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 4.243 ; 4.243 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 4.153 ; 4.153 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 4.254 ; 4.254 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 3.572 ; 3.572 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 4.132 ; 4.132 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 4.139 ; 4.139 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 3.688 ; 3.688 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 3.446 ; 3.446 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 4.304 ; 4.304 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 3.571 ; 3.571 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 3.651 ; 3.651 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 3.744 ; 3.744 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 3.755 ; 3.755 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 3.618 ; 3.618 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 4.239 ; 4.239 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 4.373 ; 4.373 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 4.103 ; 4.103 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 4.060 ; 4.060 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 4.154 ; 4.154 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 3.964 ; 3.964 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 4.387 ; 4.387 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 4.125 ; 4.125 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 4.216 ; 4.216 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 4.209 ; 4.209 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 4.106 ; 4.106 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 4.393 ; 4.393 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 4.261 ; 4.261 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 3.930 ; 3.930 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 3.782 ; 3.782 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 3.793 ; 3.793 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 3.685 ; 3.685 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 4.018 ; 4.018 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 3.878 ; 3.878 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 3.771 ; 3.771 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 3.780 ; 3.780 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 3.693 ; 3.693 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 4.115 ; 4.115 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 3.687 ; 3.687 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 3.665 ; 3.665 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 3.773 ; 3.773 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 3.879 ; 3.879 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 4.122 ; 4.122 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+;  clk             ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -85.38              ;
+;  clk             ; N/A   ; N/A  ; N/A      ; N/A     ; -85.380             ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------------+
+; Setup Times                                                                   ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; 66.041 ; 66.041 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; 65.659 ; 65.659 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; 65.882 ; 65.882 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; 66.041 ; 66.041 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; 65.499 ; 65.499 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; 65.605 ; 65.605 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; 65.123 ; 65.123 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; 65.411 ; 65.411 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; 65.641 ; 65.641 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; 65.975 ; 65.975 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; 65.199 ; 65.199 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; 65.278 ; 65.278 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; 65.326 ; 65.326 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; 65.316 ; 65.316 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; 65.523 ; 65.523 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; 65.275 ; 65.275 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; 65.579 ; 65.579 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; 66.347 ; 66.347 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; 65.977 ; 65.977 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; 65.937 ; 65.937 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; 65.978 ; 65.978 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; 65.876 ; 65.876 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; 65.473 ; 65.473 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; 65.813 ; 65.813 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; 65.889 ; 65.889 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; 65.709 ; 65.709 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; 65.989 ; 65.989 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; 66.347 ; 66.347 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; 66.070 ; 66.070 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; 65.624 ; 65.624 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; 65.933 ; 65.933 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; 65.832 ; 65.832 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; 65.855 ; 65.855 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; 65.913 ; 65.913 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; 66.257 ; 66.257 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; 66.257 ; 66.257 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; 66.083 ; 66.083 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; 65.966 ; 65.966 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; 66.100 ; 66.100 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; LDAC[*]         ; clk        ; -2.878 ; -2.878 ; Rise       ; clk             ;
+;  LDAC[0]        ; clk        ; -3.073 ; -3.073 ; Rise       ; clk             ;
+;  LDAC[1]        ; clk        ; -3.248 ; -3.248 ; Rise       ; clk             ;
+;  LDAC[2]        ; clk        ; -3.378 ; -3.378 ; Rise       ; clk             ;
+;  LDAC[3]        ; clk        ; -3.063 ; -3.063 ; Rise       ; clk             ;
+;  LDAC[4]        ; clk        ; -3.112 ; -3.112 ; Rise       ; clk             ;
+;  LDAC[5]        ; clk        ; -2.878 ; -2.878 ; Rise       ; clk             ;
+;  LDAC[6]        ; clk        ; -2.994 ; -2.994 ; Rise       ; clk             ;
+;  LDAC[7]        ; clk        ; -3.141 ; -3.141 ; Rise       ; clk             ;
+;  LDAC[8]        ; clk        ; -3.297 ; -3.297 ; Rise       ; clk             ;
+;  LDAC[9]        ; clk        ; -2.909 ; -2.909 ; Rise       ; clk             ;
+;  LDAC[10]       ; clk        ; -2.951 ; -2.951 ; Rise       ; clk             ;
+;  LDAC[11]       ; clk        ; -2.964 ; -2.964 ; Rise       ; clk             ;
+;  LDAC[12]       ; clk        ; -2.959 ; -2.959 ; Rise       ; clk             ;
+;  LDAC[13]       ; clk        ; -3.056 ; -3.056 ; Rise       ; clk             ;
+;  LDAC[14]       ; clk        ; -2.949 ; -2.949 ; Rise       ; clk             ;
+;  LDAC[15]       ; clk        ; -3.097 ; -3.097 ; Rise       ; clk             ;
+; RDAC[*]         ; clk        ; -2.685 ; -2.685 ; Rise       ; clk             ;
+;  RDAC[0]        ; clk        ; -2.932 ; -2.932 ; Rise       ; clk             ;
+;  RDAC[1]        ; clk        ; -2.918 ; -2.918 ; Rise       ; clk             ;
+;  RDAC[2]        ; clk        ; -2.949 ; -2.949 ; Rise       ; clk             ;
+;  RDAC[3]        ; clk        ; -2.904 ; -2.904 ; Rise       ; clk             ;
+;  RDAC[4]        ; clk        ; -2.685 ; -2.685 ; Rise       ; clk             ;
+;  RDAC[5]        ; clk        ; -2.828 ; -2.828 ; Rise       ; clk             ;
+;  RDAC[6]        ; clk        ; -2.896 ; -2.896 ; Rise       ; clk             ;
+;  RDAC[7]        ; clk        ; -2.801 ; -2.801 ; Rise       ; clk             ;
+;  RDAC[8]        ; clk        ; -2.945 ; -2.945 ; Rise       ; clk             ;
+;  RDAC[9]        ; clk        ; -3.127 ; -3.127 ; Rise       ; clk             ;
+;  RDAC[10]       ; clk        ; -3.009 ; -3.009 ; Rise       ; clk             ;
+;  RDAC[11]       ; clk        ; -2.763 ; -2.763 ; Rise       ; clk             ;
+;  RDAC[12]       ; clk        ; -2.909 ; -2.909 ; Rise       ; clk             ;
+;  RDAC[13]       ; clk        ; -2.856 ; -2.856 ; Rise       ; clk             ;
+;  RDAC[14]       ; clk        ; -2.870 ; -2.870 ; Rise       ; clk             ;
+;  RDAC[15]       ; clk        ; -2.904 ; -2.904 ; Rise       ; clk             ;
+; volume_ctrl[*]  ; clk        ; -2.824 ; -2.824 ; Rise       ; clk             ;
+;  volume_ctrl[0] ; clk        ; -2.941 ; -2.941 ; Rise       ; clk             ;
+;  volume_ctrl[1] ; clk        ; -2.877 ; -2.877 ; Rise       ; clk             ;
+;  volume_ctrl[2] ; clk        ; -2.824 ; -2.824 ; Rise       ; clk             ;
+;  volume_ctrl[3] ; clk        ; -2.856 ; -2.856 ; Rise       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 8.586 ; 8.586 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 7.971 ; 7.971 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 7.952 ; 7.952 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 7.694 ; 7.694 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 7.724 ; 7.724 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 7.737 ; 7.737 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 7.367 ; 7.367 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 7.891 ; 7.891 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 7.845 ; 7.845 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 7.681 ; 7.681 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 7.357 ; 7.357 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 8.164 ; 8.164 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 7.605 ; 7.605 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 7.698 ; 7.698 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 8.586 ; 8.586 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 7.680 ; 7.680 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 7.693 ; 7.693 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 7.604 ; 7.604 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 6.055 ; 6.055 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 7.429 ; 7.429 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 6.360 ; 6.360 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 6.368 ; 6.368 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 6.058 ; 6.058 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 7.612 ; 7.612 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 6.347 ; 6.347 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 7.524 ; 7.524 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 6.551 ; 6.551 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 6.064 ; 6.064 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 7.714 ; 7.714 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 6.344 ; 6.344 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 6.515 ; 6.515 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 6.656 ; 6.656 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 6.073 ; 6.073 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 6.367 ; 6.367 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 6.672 ; 6.672 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 6.404 ; 6.404 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 7.306 ; 7.306 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 7.310 ; 7.310 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 7.577 ; 7.577 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 7.360 ; 7.360 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 7.913 ; 7.913 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 7.319 ; 7.319 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 7.242 ; 7.242 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 7.003 ; 7.003 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 7.455 ; 7.455 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 7.709 ; 7.709 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 7.153 ; 7.153 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 7.920 ; 7.920 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 7.768 ; 7.768 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 7.557 ; 7.557 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 7.757 ; 7.757 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 7.548 ; 7.548 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 7.320 ; 7.320 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 7.901 ; 7.901 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 7.665 ; 7.665 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 7.037 ; 7.037 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 6.652 ; 6.652 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 6.663 ; 6.663 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 6.623 ; 6.623 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 6.455 ; 6.455 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 6.411 ; 6.411 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 7.249 ; 7.249 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 6.431 ; 6.431 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 7.036 ; 7.036 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 6.879 ; 6.879 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 6.641 ; 6.641 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 6.647 ; 6.647 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 7.043 ; 7.043 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 7.495 ; 7.495 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 6.658 ; 6.658 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 6.436 ; 6.436 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 6.416 ; 6.416 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 6.643 ; 6.643 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 6.882 ; 6.882 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 7.355 ; 7.355 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 6.677 ; 6.677 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; LDAC2[*]   ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[0]  ; clk        ; 4.291 ; 4.291 ; Rise       ; clk             ;
+;  LDAC2[1]  ; clk        ; 4.185 ; 4.185 ; Rise       ; clk             ;
+;  LDAC2[2]  ; clk        ; 4.432 ; 4.432 ; Rise       ; clk             ;
+;  LDAC2[3]  ; clk        ; 4.419 ; 4.419 ; Rise       ; clk             ;
+;  LDAC2[4]  ; clk        ; 4.283 ; 4.283 ; Rise       ; clk             ;
+;  LDAC2[5]  ; clk        ; 4.069 ; 4.069 ; Rise       ; clk             ;
+;  LDAC2[6]  ; clk        ; 4.311 ; 4.311 ; Rise       ; clk             ;
+;  LDAC2[7]  ; clk        ; 4.315 ; 4.315 ; Rise       ; clk             ;
+;  LDAC2[8]  ; clk        ; 4.135 ; 4.135 ; Rise       ; clk             ;
+;  LDAC2[9]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  LDAC2[10] ; clk        ; 4.396 ; 4.396 ; Rise       ; clk             ;
+;  LDAC2[11] ; clk        ; 4.344 ; 4.344 ; Rise       ; clk             ;
+;  LDAC2[12] ; clk        ; 4.280 ; 4.280 ; Rise       ; clk             ;
+;  LDAC2[13] ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  LDAC2[14] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  LDAC2[15] ; clk        ; 4.253 ; 4.253 ; Rise       ; clk             ;
+;  LDAC2[16] ; clk        ; 4.294 ; 4.294 ; Rise       ; clk             ;
+;  LDAC2[17] ; clk        ; 4.763 ; 4.763 ; Rise       ; clk             ;
+;  LDAC2[18] ; clk        ; 4.284 ; 4.284 ; Rise       ; clk             ;
+;  LDAC2[19] ; clk        ; 4.297 ; 4.297 ; Rise       ; clk             ;
+;  LDAC2[20] ; clk        ; 4.243 ; 4.243 ; Rise       ; clk             ;
+;  LDAC2[21] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[22] ; clk        ; 4.153 ; 4.153 ; Rise       ; clk             ;
+;  LDAC2[23] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[24] ; clk        ; 3.584 ; 3.584 ; Rise       ; clk             ;
+;  LDAC2[25] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[26] ; clk        ; 3.443 ; 3.443 ; Rise       ; clk             ;
+;  LDAC2[27] ; clk        ; 4.254 ; 4.254 ; Rise       ; clk             ;
+;  LDAC2[28] ; clk        ; 3.572 ; 3.572 ; Rise       ; clk             ;
+;  LDAC2[29] ; clk        ; 4.132 ; 4.132 ; Rise       ; clk             ;
+;  LDAC2[30] ; clk        ; 4.139 ; 4.139 ; Rise       ; clk             ;
+;  LDAC2[31] ; clk        ; 3.688 ; 3.688 ; Rise       ; clk             ;
+;  LDAC2[32] ; clk        ; 3.446 ; 3.446 ; Rise       ; clk             ;
+;  LDAC2[33] ; clk        ; 4.304 ; 4.304 ; Rise       ; clk             ;
+;  LDAC2[34] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[35] ; clk        ; 3.571 ; 3.571 ; Rise       ; clk             ;
+;  LDAC2[36] ; clk        ; 3.651 ; 3.651 ; Rise       ; clk             ;
+;  LDAC2[37] ; clk        ; 3.744 ; 3.744 ; Rise       ; clk             ;
+;  LDAC2[38] ; clk        ; 3.462 ; 3.462 ; Rise       ; clk             ;
+;  LDAC2[39] ; clk        ; 3.598 ; 3.598 ; Rise       ; clk             ;
+;  LDAC2[40] ; clk        ; 3.755 ; 3.755 ; Rise       ; clk             ;
+;  LDAC2[41] ; clk        ; 3.618 ; 3.618 ; Rise       ; clk             ;
+; RDAC2[*]   ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+;  RDAC2[0]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[1]  ; clk        ; 4.093 ; 4.093 ; Rise       ; clk             ;
+;  RDAC2[2]  ; clk        ; 4.239 ; 4.239 ; Rise       ; clk             ;
+;  RDAC2[3]  ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
+;  RDAC2[4]  ; clk        ; 4.373 ; 4.373 ; Rise       ; clk             ;
+;  RDAC2[5]  ; clk        ; 4.103 ; 4.103 ; Rise       ; clk             ;
+;  RDAC2[6]  ; clk        ; 4.060 ; 4.060 ; Rise       ; clk             ;
+;  RDAC2[7]  ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  RDAC2[8]  ; clk        ; 4.154 ; 4.154 ; Rise       ; clk             ;
+;  RDAC2[9]  ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[10] ; clk        ; 3.964 ; 3.964 ; Rise       ; clk             ;
+;  RDAC2[11] ; clk        ; 4.387 ; 4.387 ; Rise       ; clk             ;
+;  RDAC2[12] ; clk        ; 4.302 ; 4.302 ; Rise       ; clk             ;
+;  RDAC2[13] ; clk        ; 4.125 ; 4.125 ; Rise       ; clk             ;
+;  RDAC2[14] ; clk        ; 4.216 ; 4.216 ; Rise       ; clk             ;
+;  RDAC2[15] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  RDAC2[16] ; clk        ; 4.209 ; 4.209 ; Rise       ; clk             ;
+;  RDAC2[17] ; clk        ; 4.106 ; 4.106 ; Rise       ; clk             ;
+;  RDAC2[18] ; clk        ; 4.393 ; 4.393 ; Rise       ; clk             ;
+;  RDAC2[19] ; clk        ; 4.261 ; 4.261 ; Rise       ; clk             ;
+;  RDAC2[20] ; clk        ; 3.930 ; 3.930 ; Rise       ; clk             ;
+;  RDAC2[21] ; clk        ; 3.782 ; 3.782 ; Rise       ; clk             ;
+;  RDAC2[22] ; clk        ; 3.793 ; 3.793 ; Rise       ; clk             ;
+;  RDAC2[23] ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  RDAC2[24] ; clk        ; 3.700 ; 3.700 ; Rise       ; clk             ;
+;  RDAC2[25] ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+;  RDAC2[26] ; clk        ; 4.033 ; 4.033 ; Rise       ; clk             ;
+;  RDAC2[27] ; clk        ; 3.685 ; 3.685 ; Rise       ; clk             ;
+;  RDAC2[28] ; clk        ; 4.018 ; 4.018 ; Rise       ; clk             ;
+;  RDAC2[29] ; clk        ; 3.878 ; 3.878 ; Rise       ; clk             ;
+;  RDAC2[30] ; clk        ; 3.771 ; 3.771 ; Rise       ; clk             ;
+;  RDAC2[31] ; clk        ; 3.780 ; 3.780 ; Rise       ; clk             ;
+;  RDAC2[32] ; clk        ; 3.693 ; 3.693 ; Rise       ; clk             ;
+;  RDAC2[33] ; clk        ; 3.937 ; 3.937 ; Rise       ; clk             ;
+;  RDAC2[34] ; clk        ; 4.115 ; 4.115 ; Rise       ; clk             ;
+;  RDAC2[35] ; clk        ; 3.790 ; 3.790 ; Rise       ; clk             ;
+;  RDAC2[36] ; clk        ; 3.687 ; 3.687 ; Rise       ; clk             ;
+;  RDAC2[37] ; clk        ; 3.665 ; 3.665 ; Rise       ; clk             ;
+;  RDAC2[38] ; clk        ; 3.773 ; 3.773 ; Rise       ; clk             ;
+;  RDAC2[39] ; clk        ; 3.879 ; 3.879 ; Rise       ; clk             ;
+;  RDAC2[40] ; clk        ; 4.122 ; 4.122 ; Rise       ; clk             ;
+;  RDAC2[41] ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 37    ; 37   ;
+; Unconstrained Input Port Paths  ; 1764  ; 1764 ;
+; Unconstrained Output Ports      ; 84    ; 84   ;
+; Unconstrained Output Port Paths ; 84    ; 84   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+    Info: Processing started: Thu Mar 15 15:27:21 2018
+Info: Command: quartus_sta Sound -c Sound
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Sound.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -85.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -85.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 442 megabytes
+    Info: Processing ended: Thu Mar 15 15:27:39 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:02
+
+

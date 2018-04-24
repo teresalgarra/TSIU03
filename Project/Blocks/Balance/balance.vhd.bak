@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity balance_block is
+	port (clk, rstn : in std_logic;
+		LDAC2, RDAC2 : out signed(15 downto 0);
+		volume_ctrl : in std_logic_vector(15 downto 0);
+		RDAC3, LDAC3 : out signed(15 downto 0));
+end entity,
+
+architecture arch of balance_block is
+	signal RDAC_mixed, LDAC_mixed : signed(15 downto 0);
+			Bal : signed ( downto );							--longitud de estas palabras
+
+begin
+	--Volume Value
+	volume_value: process(clk)
+	begin
+		if rstn= '0' then
+			Up <= (others =>'0');
+			Down <= (others =>'0');
+			Vol <= (others =>'0');
+		elsif rising_edge(clk) then
+			if volume_ctrl = ' PONER AQUI VALOR EN BINARIO DE + ' then
+				Bal <= ' PONER AQUI VALOR DE 1,1 O ALGO QUE INCREMENTE LA SIGNAL EN ESE ORDEN MAS O MENOS '
+			else
+				Bal <= ' PONER AQUI VALOR DE 0,9 O ALGO QUE DECREZCA LA SIGNAL EN ESE ORDEN MAS O MENOS '
+			end if
+		end if
+		
+	--Volume Changer
+	NO SE ME OCURRE AHORA MISMO COMO IMPLEMENTAR ESTO. QUIZAS DOS CIRCUITOS DE AUMENTO Y DIMINUCION INDEPENDIENTES IZQ. DRCHA. Y LOS CONTROLAMOS CON UN MUX EN FUNCION DE LA ENTRADA DL KEYBOARD?

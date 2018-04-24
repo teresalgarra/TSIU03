@@ -1,0 +1,444 @@
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd was successful.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "LDAC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "RDAC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "LADC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "RADC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/SndDriver.vhd(43): Vopt Compiler exiting
+# Error loading design
+# Compile of SndDriver.vhd failed with 5 errors.
+# Compile of SndDriver.vhd failed with 1 errors.
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd failed with 5 errors.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 1 failed with 5 errors. 
+# Compile of SndDriver.vhd failed with 1 errors.
+# Compile of SndDriver.vhd was successful.
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(109): (vopt-1133) Type mismatch for port "BitCnt" in component "ctrl" when binding to entity "Ctrl".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(109): (vopt-1133) Type mismatch for port "SCCnt" in component "ctrl" when binding to entity "Ctrl".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/ctrl.vhd(55): Vopt Compiler exiting
+# Error loading design
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd was successful.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(109): (vopt-1133) Type mismatch for port "BitCnt" in component "ctrl" when binding to entity "Ctrl".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(109): (vopt-1133) Type mismatch for port "SCCnt" in component "ctrl" when binding to entity "Ctrl".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/ctrl.vhd(55): Vopt Compiler exiting
+# Error loading design
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd failed with 5 errors.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 1 failed with 5 errors. 
+# Compile of SndDriver.vhd was successful.
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "BitCnt" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "DAC" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "SCCnt" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "ADC" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd(11): Vopt Compiler exiting
+# Error loading design
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd failed with 1 errors.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 1 failed with 1 error. 
+# Compile of SndDriver.vhd was successful.
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "DAC" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(136): (vopt-1133) Type mismatch for port "ADC" in component "channel_mod" when binding to entity "Channel_Mod".
+# 
+# ** Error: C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd(11): Vopt Compiler exiting
+# Error loading design
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd was successful.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "LDAC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "RDAC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "LADC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\TB_Audio.vhd(208): (vopt-1133) Type mismatch for port "RADC" in component "SndDriver" when binding to entity "SndDriver".
+# 
+# ** Error: C:\Users\teral436\Desktop\Lab4_Audio\SndDriver.vhd(44): Vopt Compiler exiting
+# Error loading design
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd was successful.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# 8 compiles, 1 failed with 1 error. 
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd was successful.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+restart
+run
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+run
+restart
+run
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+run -all
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+restart
+# Drag/Drop error expanding instance path: ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/b2v_inst5/line__13/*'.
+# 
+add wave -position end  sim:/tb_audio/clk
+add wave -position end  sim:/tb_audio/rstn
+add wave -position end  sim:/tb_audio/mclk
+add wave -position end  sim:/tb_audio/bclk
+add wave -position end  sim:/tb_audio/adclrc
+add wave -position end  sim:/tb_audio/daclrc
+add wave -position end  sim:/tb_audio/adcdat
+add wave -position end  sim:/tb_audio/dacdat
+add wave -position end  sim:/tb_audio/lrsel
+add wave -position end  sim:/tb_audio/LADC_out
+add wave -position end  sim:/tb_audio/RADC_out
+add wave -position end  sim:/tb_audio/LDAC_in
+add wave -position end  sim:/tb_audio/RDAC_in
+add wave -position end  sim:/tb_audio/done
+add wave -position end  sim:/tb_audio/ADC_stimuli_left
+add wave -position end  sim:/tb_audio/ADC_stimuli_right
+add wave -position end  sim:/tb_audio/DAC_result_left
+add wave -position end  sim:/tb_audio/DAC_result_right
+add wave -position end  sim:/tb_audio/bit_index
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+restart
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+restart
+run
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+run -all
+restart
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of Application.vhd was successful.
+# Compile of Channel_Mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of group_no.vhd was successful.
+# Compile of mux_audio.vhd was successful.
+# Compile of SndDriver.vhd failed with 5 errors.
+# Compile of Sound.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# 8 compiles, 1 failed with 5 errors. 
+# Compile of SndDriver.vhd was successful.
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+restart
+run
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+run
+restart
+# Drag/Drop error expanding instance path: ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/b2v_inst5/line__13/*'.
+# 
+# Compile of mux_audio.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+# Drag/Drop error expanding instance path: ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/b2v_inst5/line__13/*'.
+# 
+add wave -position end  sim:/tb_audio/clk
+add wave -position end  sim:/tb_audio/rstn
+add wave -position end  sim:/tb_audio/mclk
+add wave -position end  sim:/tb_audio/bclk
+add wave -position end  sim:/tb_audio/adclrc
+add wave -position end  sim:/tb_audio/daclrc
+add wave -position end  sim:/tb_audio/adcdat
+add wave -position end  sim:/tb_audio/dacdat
+add wave -position end  sim:/tb_audio/lrsel
+add wave -position end  sim:/tb_audio/LADC_out
+add wave -position end  sim:/tb_audio/RADC_out
+add wave -position end  sim:/tb_audio/LDAC_in
+add wave -position end  sim:/tb_audio/RDAC_in
+add wave -position end  sim:/tb_audio/done
+add wave -position end  sim:/tb_audio/ADC_stimuli_left
+add wave -position end  sim:/tb_audio/ADC_stimuli_right
+add wave -position end  sim:/tb_audio/DAC_result_left
+add wave -position end  sim:/tb_audio/DAC_result_right
+add wave -position end  sim:/tb_audio/bit_index
+restart
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of ctrl.vhd failed with 1 errors.
+# Compile of ctrl.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of ctrl.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1090 ns  Iteration: 1  Instance: /tb_audio
+# ** Error: Error: daclrc /= adclrc
+#    Time: 10301 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41031 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41031 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41031 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41031 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of ctrl.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -all
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 60 ns  Iteration: 0  Instance: /tb_audio/DUT/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 60 ns  Iteration: 0  Instance: /tb_audio/DUT/b2v_inst1
+# ** Note: mclk:OK (80 ns)
+#    Time: 1100 ns  Iteration: 1  Instance: /tb_audio
+# ** Error: Error: daclrc /= adclrc
+#    Time: 10301 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41041 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41041 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41041 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41041 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of ctrl.vhd was successful.
+# Compile of SndDriver.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors. 
+# Compile of SndDriver.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Error: RADC: NOK. Sent=-12760, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=0.
+#    Time: 41021 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: NOK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of SndDriver.vhd was successful.
+# Compile of SndDriver.vhd failed with 5 errors.
+# Compile of SndDriver.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -all
+# ** Note: mclk:OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+run
+# Causality operation skipped due to absense of debug database file

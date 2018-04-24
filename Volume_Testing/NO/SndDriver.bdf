@@ -1,0 +1,316 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+//#pragma file_not_in_maxplusii_format
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 80 -144 256 -128)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 9 0 23 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 -144 80 -128))
+)
+(pin
+	(input)
+	(rect 80 -128 256 -112)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "rstn" (rect 9 0 27 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 -128 80 -112))
+)
+(pin
+	(input)
+	(rect 80 216 256 232)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "LDAC[15..0]" (rect 9 0 68 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 88 416 264 432)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "RDAC[15..0]" (rect 9 0 69 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 80 296 256 312)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "adcdat" (rect 9 0 42 11)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 296 80 312))
+)
+(pin
+	(output)
+	(rect 784 208 960 224)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "dacdat" (rect 90 0 123 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 960 208 1016 224))
+)
+(pin
+	(output)
+	(rect 784 -128 960 -112)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "mclk" (rect 90 0 112 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 960 -128 1016 -112))
+)
+(pin
+	(output)
+	(rect 784 -112 960 -96)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "bclk" (rect 90 0 110 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 960 -112 1016 -96))
+)
+(pin
+	(output)
+	(rect 784 -96 960 -80)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "adclrc" (rect 90 0 119 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 960 -96 1016 -80))
+)
+(pin
+	(output)
+	(rect 784 -80 960 -64)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "daclrc" (rect 90 0 119 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 960 -80 1016 -64))
+)
+(pin
+	(output)
+	(rect 784 -64 960 -48)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "lrsel" (rect 90 0 110 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 784 120 960 136)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "LADC[15..0]" (rect 90 0 149 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 784 320 960 336)
+	(text "OUTPUT" (rect 1 0 38 10)(font "Arial" (font_size 6)))
+	(text "RADC[15..0]" (rect 90 0 150 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(connector
+	(pt 776 216)
+	(pt 784 216)
+)
+(connector
+	(pt 776 128)
+	(pt 784 128)
+	(bus)
+)
+(connector
+	(pt 776 328)
+	(pt 784 328)
+	(bus)
+)
+(connector
+	(pt 776 -56)
+	(pt 784 -56)
+)
+(connector
+	(pt 776 -120)
+	(pt 784 -120)
+)
+(connector
+	(pt 776 -88)
+	(pt 784 -88)
+)
+(connector
+	(pt 776 -72)
+	(pt 784 -72)
+)
+(connector
+	(pt 776 -104)
+	(pt 784 -104)
+)
+(connector
+	(text "clk" (rect 272 -152 286 -141)(font "Arial" ))
+	(pt 256 -136)
+	(pt 296 -136)
+)
+(connector
+	(text "rstn" (rect 267 -136 285 -125)(font "Arial" ))
+	(pt 256 -120)
+	(pt 296 -120)
+)
+(connector
+	(pt 256 224)
+	(pt 264 224)
+	(bus)
+)
+(connector
+	(pt 256 304)
+	(pt 264 304)
+)
+(connector
+	(text "clk" (rect 240 120 254 131)(font "Arial" ))
+	(pt 232 136)
+	(pt 272 136)
+)
+(connector
+	(text "rstn" (rect 235 136 253 147)(font "Arial" ))
+	(pt 232 152)
+	(pt 272 152)
+)
+(connector
+	(text "clk" (rect 232 320 246 331)(font "Arial" ))
+	(pt 224 336)
+	(pt 264 336)
+)
+(connector
+	(text "rstn" (rect 227 336 245 347)(font "Arial" ))
+	(pt 224 352)
+	(pt 264 352)
+)
+(text "Place a \"Ctrl\" here, named \"inst_ctrl\"" (rect 384 -184 581 -171)(font "Arial" (font_size 8)))
+(text "Place a \"Channel_Mod\" here, named \"inst_left\"" (rect 432 64 686 77)(font "Arial" (font_size 8)))
+(text "Place a \"Channel_Mod\" here, named \"inst_right\"" (rect 408 264 669 277)(font "Arial" (font_size 8)))
+(text "DO NOT change any of the pins here. DO NOT generate a symbol file from this module." (rect 216 -264 928 -245)(font "Arial" (font_size 12)))
+(text "(you still need to generate symbol files from Ctrl and Channel_Mod)" (rect 336 -240 701 -227)(font "Arial" (font_size 8)))
