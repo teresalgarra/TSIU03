@@ -1,0 +1,50 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+entity keyboard_decoder is 
+	port(rstn, clk, PS2_CLK, PS2_DAT, mute, equalizer : in std_logic;
+			volume_ctrl, balance_ctrl : out std_logic_vector(1 downto 0);
+			sram_ctrl : out std_logic_vector(4 downto 0);
+			vga_ctrl : out std_logic_vector(5 downto 0)
+			); 
+end entity; 
+
+architecture behavior of keyboard_decoder is
+	signal shiftreg : std_logic_vector(9 downto 0);
+	signal PS2_CLK2, PS2_CLK2_old, PS2_DAT2, detected_fall, ena, clr : std_logic;
+begin 
+	p1 : process (clk,rstn) begin 
+		 if rising_edge(clk) then
+			PS2_DAT2 <= PS2_DAT; 
+			PS2_CLK2 <= PS2_CLK; 
+			PS2_CLK2_old <= PS2_CLK2;
+		 end if; 
+		end process; 
+	
+	detected_fall <= (NOT PS2_CLK2 AND PS2_CLK2_old); 
+	
+	p2 : process(clk,rstn) begin 
+		if rstn = '0' then 
+			shiftreg <= "0000000000";
+			volume_ctrl <= "00";
+			balance_ctrl <= "00";
+			sram_ctrl <= "00";
+			vga_ctrl <= "00";
+			mute <= '0';
+			equalizer <= '0';
+		elsif rising_edge(clk) then
+			if detected_fall = '1' then
+				shiftreg <= PS2_DAT2 & shiftreg(9 downto 1);
+			end if;
+		end if; 
+	end process; 
+		
+	
+
+		
+		
+
+		
+
+	
+end architecture; 

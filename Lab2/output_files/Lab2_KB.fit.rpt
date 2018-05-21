@@ -1,6 +1,6 @@
 Fitter report for Lab2_KB
-Wed Sep 13 19:36:06 2017
-Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+Mon May 21 18:28:08 2018
+Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
 ---------------------
@@ -66,8 +66,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                         ;
 +------------------------------------+---------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Sep 13 19:36:06 2017             ;
-; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
+; Fitter Status                      ; Successful - Mon May 21 18:28:08 2018             ;
+; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; Lab2_KB                                           ;
 ; Top-level Entity Name              ; Lab2_KB                                           ;
 ; Family                             ; Cyclone IV E                                      ;
@@ -153,12 +153,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.50        ;
+; Average used               ; 2.44        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;  20.0%      ;
+;     2-4 processors         ;  18.8%      ;
 +----------------------------+-------------+
 
 
@@ -1664,9 +1664,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Fitter
+Info: Running Quartus II 64-Bit Fitter
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Wed Sep 13 19:35:41 2017
+    Info: Processing started: Mon May 21 18:27:51 2018
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Lab2_KB -c Lab2_KB
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device EP4CE115F29C7 for design "Lab2_KB"
@@ -1717,13 +1717,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file H:/TSIU03/Lab2/output_files/Lab2_KB.fit.smsg
-Info: Quartus II 32-bit Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 683 megabytes
-    Info: Processing ended: Wed Sep 13 19:36:10 2017
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 1111 megabytes
+    Info: Processing ended: Mon May 21 18:28:09 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+

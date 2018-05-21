@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Soundpad">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|VGA_contr:inst|Screen_gen:inst5|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_akh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|volume:inst3|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_q0p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|volume:inst3|lpm_mult:Mult1" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|VGA_contr:inst|Screen_gen:inst5|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_akh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|balance:inst4|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_p0p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|balance:inst4|lpm_mult:Mult1" CBX_FILE_NAME="mult_f4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|volume:inst3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_q0p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|volume:inst3|lpm_mult:Mult0" CBX_FILE_NAME="mult_g4t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|VGA_contr:inst|Screen_gen:inst5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_akh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|balance:inst4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_p0p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Soundpad|balance:inst4|lpm_mult:Mult0" CBX_FILE_NAME="mult_f4t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

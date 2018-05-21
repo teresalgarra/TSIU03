@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab2_KB
-Wed Sep 13 19:35:39 2017
-Quartus II 32-bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
+Mon May 21 18:27:50 2018
+Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
 ---------------------
@@ -42,8 +42,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 13 19:35:39 2017             ;
-; Quartus II 32-bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
+; Analysis & Synthesis Status        ; Successful - Mon May 21 18:27:50 2018             ;
+; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; Lab2_KB                                           ;
 ; Top-level Entity Name              ; Lab2_KB                                           ;
 ; Family                             ; Cyclone IV E                                      ;
@@ -241,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -249,9 +249,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Wed Sep 13 19:35:22 2017
+    Info: Processing started: Mon May 21 18:27:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_KB -c Lab2_KB
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab2_kb.vhd
@@ -280,10 +280,10 @@ Info (21057): Implemented 80 device resources after synthesis - the final resour
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 47 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 374 megabytes
-    Info: Processing ended: Wed Sep 13 19:35:39 2017
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 492 megabytes
+    Info: Processing ended: Mon May 21 18:27:50 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

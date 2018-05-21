@@ -1,0 +1,11 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+use IEEE.numeric_std.all;
+
+
+entity volume is 
+	port(rstn, clk : in std_logic;
+			volume_ctrl : in unsigned(15 downto 0);
+			LDAC_0,RDAC_0,sram_audio : in unsigned(15 downto 0);
+			LDAC_0,RDAC_0 : out unsinged(15 downto 0)); 
+end entity; 

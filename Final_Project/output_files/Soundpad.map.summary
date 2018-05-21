@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 17 12:59:34 2017
+Quartus II 64-Bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
+Revision Name : Soundpad
+Top-level Entity Name : Soundpad
+Family : Cyclone IV E
+Total logic elements : 3,093
+    Total combinational functions : 3,012
+    Dedicated logic registers : 625
+Total registers : 625
+Total pins : 82
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 10
+Total PLLs : 0

@@ -1,0 +1,32 @@
+library ieee; 
+use ieee.std_logic_1164.all; 
+use IEEE.numeric_std.all;
+
+
+entity volume is 
+	port(rstn, clk : in std_logic;
+			volume_ctrl : in std_logic_vector(3 downto 0);
+			LDAC_0, RDAC_0 : in signed(15 downto 0);
+			sram_audio : in signed(15 downto 0);
+			LDAC_1, RDAC_1 : out signed(41 downto 0)); 
+end entity; 
+
+architecture behaviour of volume is
+signal LDAC_0_int, RDAC_0_int : signed(41 downto 0);
+begin
+LDAC_1 <= LDAC_0_int;
+RDAC_1 <= RDAC_0_int;
+
+process(clk,rstn)
+begin
+	if(rstn='0') then
+		LDAC_0_int <= (others => '0');
+		RDAC_0_int <= (others => '0');
+	elsif rising_edge(clk) then
+		LDAC_0_int <=  (sram_audio + LDAC_0)* signed('0' & volume_ctrl) * 1/5;
+		RDAC_0_int <=  (sram_audio + RDAC_0)* signed('0' & volume_ctrl) * 1/5;
+	end if;
+end process;	
+				 
+
+end architecture;

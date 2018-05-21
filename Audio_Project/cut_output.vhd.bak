@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity cut_output is
+	port (clk, rstn : in std_logic;
+			RDAC, LDAC: in signed(15 downto 0);
+			volume_ctrl : in std_logic_vector(3 downto 0);
+			RADC, LADC : out signed(15 downto 0));
+end entity;
+
+architecture arch of volume_block is 
+	signal LADC2, RADC2 : signed(41 downto 0);
+	signal LADC2_VECT, RADC2_VECT : std_logic_vector(15 downto 0);
+	
+begin 
+	LADC <= signed(LADC2_VECT);
+	RADC <= signed(RADC2_VECT);
+	
+	volume_control: process(clk, rstn)
+	begin
+		if (rstn= '0') then
+			LADC <= (others => '0');
+			RADC <= (others => '0');
+		elsif rising_edge(clk) then
+			LADC2 <= LDAC * signed('0' & volume_ctrl) * 1/5;
+			RADC2 <= RDAC * signed('0' & volume_ctrl) * 1/5;
+		end if;
+	end process;
+			
+	cut: process(clk,rstn)
+	begin
+		if LADC2 > 32767 then
+		LADC2_VECT <= (15=>'0', others => '1');
+		elsif LADC2 < -32768 then
+			LADC2_VECT <= (15 => '1', others => '0');
+		else
+			LADC2_VECT <= std_logic_vector(LADC2(41) & LADC2(14 DOWNTO 0));
+		end if;
+		
+		if RADC2 > 32767 then
+		RADC2_VECT <= (15=>'0', others => '1');
+		elsif RADC2 < -32768 then
+			RADC2_VECT <= (15 => '1', others => '0');
+		else
+			RADC2_VECT <= std_logic_vector(RADC2(41) & RADC2(14 DOWNTO 0));
+		end if;
+	end process;
+	
+end architecture;

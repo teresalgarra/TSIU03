@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Sound
-Mon Dec 11 16:43:05 2017
+Mon May 21 17:41:16 2018
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -13,12 +13,24 @@ Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Ve
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Registers Packed Into Inferred Megafunctions
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0|altsyncram_37v:auto_generated
+ 16. Parameter Settings for User Entity Instance: group_no:inst
+ 17. Parameter Settings for Inferred Entity Instance: Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0
+ 18. Parameter Settings for Inferred Entity Instance: Application:instApp|lpm_mult:Mult1
+ 19. Parameter Settings for Inferred Entity Instance: Application:instApp|lpm_mult:Mult0
+ 20. Parameter Settings for Inferred Entity Instance: Application:instApp|PSAC:psac_inst|lpm_mult:Mult0
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. lpm_mult Parameter Settings by Entity Instance
+ 23. Port Connectivity Checks: "Application:instApp|PSAC:psac_inst"
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -44,19 +56,19 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 11 16:43:05 2017             ;
+; Analysis & Synthesis Status        ; Successful - Mon May 21 17:41:16 2018             ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; Sound                                             ;
-; Top-level Entity Name              ; SndDriver                                         ;
+; Top-level Entity Name              ; Sound                                             ;
 ; Family                             ; Cyclone IV E                                      ;
-; Total logic elements               ; 41                                                ;
-;     Total combinational functions  ; 25                                                ;
-;     Dedicated logic registers      ; 36                                                ;
-; Total registers                    ; 36                                                ;
-; Total pins                         ; 73                                                ;
+; Total logic elements               ; 609                                               ;
+;     Total combinational functions  ; 534                                               ;
+;     Dedicated logic registers      ; 359                                               ;
+; Total registers                    ; 359                                               ;
+; Total pins                         ; 43                                                ;
 ; Total virtual pins                 ; 0                                                 ;
-; Total memory bits                  ; 0                                                 ;
-; Embedded Multiplier 9-bit elements ; 0                                                 ;
+; Total memory bits                  ; 1,600                                             ;
+; Embedded Multiplier 9-bit elements ; 6                                                 ;
 ; Total PLLs                         ; 0                                                 ;
 +------------------------------------+---------------------------------------------------+
 
@@ -67,7 +79,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; SndDriver          ; Sound              ;
+; Top-level entity name                                                      ; Sound              ; Sound              ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Optimization Technique                                                     ; Area               ; Balanced           ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -165,16 +177,36 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
-; SndDriver.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/teral436/Desktop/Lab4_Audio/SndDriver.bdf   ;         ;
-; ctrl.vhd                         ; yes             ; User VHDL File                     ; C:/Users/teral436/Desktop/Lab4_Audio/ctrl.vhd        ;         ;
-; Channel_Mod.vhd                  ; yes             ; User VHDL File                     ; C:/Users/teral436/Desktop/Lab4_Audio/Channel_Mod.vhd ;         ;
-; mux_audio.vhd                    ; yes             ; User VHDL File                     ; C:/Users/teral436/Desktop/Lab4_Audio/mux_audio.vhd   ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; group_no.vhd                     ; yes             ; User VHDL File                     ; H:/TSIU03/Lab4_Audio/group_no.vhd                                       ;         ;
+; Sound.bdf                        ; yes             ; User Block Diagram/Schematic File  ; H:/TSIU03/Lab4_Audio/Sound.bdf                                          ;         ;
+; Application.vhd                  ; yes             ; User VHDL File                     ; H:/TSIU03/Lab4_Audio/Application.vhd                                    ;         ;
+; SndDriver.bdf                    ; yes             ; User Block Diagram/Schematic File  ; H:/TSIU03/Lab4_Audio/SndDriver.bdf                                      ;         ;
+; ctrl.vhd                         ; yes             ; User VHDL File                     ; H:/TSIU03/Lab4_Audio/ctrl.vhd                                           ;         ;
+; Channel_Mod.vhd                  ; yes             ; User VHDL File                     ; H:/TSIU03/Lab4_Audio/Channel_Mod.vhd                                    ;         ;
+; mux_audio.vhd                    ; yes             ; User VHDL File                     ; H:/TSIU03/Lab4_Audio/mux_audio.vhd                                      ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal121.inc                   ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/aglobal121.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_37v.tdf            ; yes             ; Auto-Generated Megafunction        ; H:/TSIU03/Lab4_Audio/db/altsyncram_37v.tdf                              ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
+; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/multcore.inc          ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/12.1sp1/quartus/libraries/megafunctions/altshift.inc          ;         ;
+; db/mult_36t.tdf                  ; yes             ; Auto-Generated Megafunction        ; H:/TSIU03/Lab4_Audio/db/mult_36t.tdf                                    ;         ;
+; db/mult_lbt.tdf                  ; yes             ; Auto-Generated Megafunction        ; H:/TSIU03/Lab4_Audio/db/mult_lbt.tdf                                    ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -182,68 +214,95 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 41    ;
+; Estimated Total logic elements              ; 609   ;
 ;                                             ;       ;
-; Total combinational functions               ; 25    ;
+; Total combinational functions               ; 534   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 4     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 19    ;
+;     -- 4 input functions                    ; 86    ;
+;     -- 3 input functions                    ; 239   ;
+;     -- <=2 input functions                  ; 209   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 13    ;
-;     -- arithmetic mode                      ; 12    ;
+;     -- normal mode                          ; 236   ;
+;     -- arithmetic mode                      ; 298   ;
 ;                                             ;       ;
-; Total registers                             ; 36    ;
-;     -- Dedicated logic registers            ; 36    ;
+; Total registers                             ; 359   ;
+;     -- Dedicated logic registers            ; 359   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 73    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out                             ; 36    ;
-; Total fan-out                               ; 284   ;
-; Average fan-out                             ; 1.37  ;
+; I/O pins                                    ; 43    ;
+; Total memory bits                           ; 1600  ;
+; Embedded Multiplier 9-bit elements          ; 6     ;
+; Maximum fan-out                             ; 384   ;
+; Total fan-out                               ; 2872  ;
+; Average fan-out                             ; 2.84  ;
 +---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
-; |SndDriver                 ; 25 (0)            ; 36 (0)       ; 0           ; 0            ; 0       ; 0         ; 73   ; 0            ; |SndDriver                   ;              ;
-;    |Channel_Mod:inst1|     ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SndDriver|Channel_Mod:inst1 ;              ;
-;    |Ctrl:inst|             ; 24 (24)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SndDriver|Ctrl:inst         ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                     ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |Sound                                         ; 534 (0)           ; 359 (0)      ; 1600        ; 6            ; 0       ; 3         ; 43   ; 0            ; |Sound                                                                                                      ;              ;
+;    |Application:instApp|                       ; 465 (409)         ; 272 (247)    ; 1600        ; 6            ; 0       ; 3         ; 0    ; 0            ; |Sound|Application:instApp                                                                                  ;              ;
+;       |PSAC:psac_inst|                         ; 56 (56)           ; 25 (25)      ; 1600        ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst                                                                   ;              ;
+;          |POLY_ROM:rom|                        ; 0 (0)             ; 0 (0)        ; 1600        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst|POLY_ROM:rom                                                      ;              ;
+;             |altsyncram:Mux24_rtl_0|           ; 0 (0)             ; 0 (0)        ; 1600        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0                               ;              ;
+;                |altsyncram_37v:auto_generated| ; 0 (0)             ; 0 (0)        ; 1600        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0|altsyncram_37v:auto_generated ;              ;
+;          |lpm_mult:Mult0|                      ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst|lpm_mult:Mult0                                                    ;              ;
+;             |mult_lbt:auto_generated|          ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|PSAC:psac_inst|lpm_mult:Mult0|mult_lbt:auto_generated                            ;              ;
+;       |lpm_mult:Mult0|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|lpm_mult:Mult0                                                                   ;              ;
+;          |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|lpm_mult:Mult0|mult_36t:auto_generated                                           ;              ;
+;       |lpm_mult:Mult1|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|lpm_mult:Mult1                                                                   ;              ;
+;          |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Sound|Application:instApp|lpm_mult:Mult1|mult_36t:auto_generated                                           ;              ;
+;    |SndDriver:instSndDrv|                      ; 69 (0)            ; 87 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|SndDriver:instSndDrv                                                                                 ;              ;
+;       |Channel_Mod:inst_left|                  ; 20 (20)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|SndDriver:instSndDrv|Channel_Mod:inst_left                                                           ;              ;
+;       |Channel_Mod:inst_right|                 ; 24 (24)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|SndDriver:instSndDrv|Channel_Mod:inst_right                                                          ;              ;
+;       |Ctrl:inst4|                             ; 24 (24)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|SndDriver:instSndDrv|Ctrl:inst4                                                                      ;              ;
+;       |mux_audio:inst5|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sound|SndDriver:instSndDrv|mux_audio:inst5                                                                 ;              ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; Channel_Mod:inst2|RXReg[0..15]         ; Stuck at GND due to stuck port clock_enable ;
-; Channel_Mod:inst2|TXReg[0..15]         ; Lost fanout                                 ;
-; Channel_Mod:inst2|dacdat               ; Stuck at GND due to stuck port data_in      ;
-; Channel_Mod:inst1|TXReg[0..15]         ; Stuck at GND due to stuck port data_in      ;
-; Channel_Mod:inst1|dacdat               ; Stuck at GND due to stuck port data_in      ;
-; Total Number of Removed Registers = 50 ;                                             ;
-+----------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                        ;
++-----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
+; Name                                                                                                            ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                  ;
++-----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
+; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0|altsyncram_37v:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 64           ; 25           ; --           ; --           ; 1600 ; Sound.Sound0.rtl.mif ;
++-----------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+----------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                  ;
-+----------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Register name              ; Reason for Removal        ; Registers Removed due to This Register                                              ;
-+----------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Channel_Mod:inst1|TXReg[0] ; Stuck at GND              ; Channel_Mod:inst1|TXReg[1], Channel_Mod:inst1|TXReg[2], Channel_Mod:inst1|TXReg[3], ;
-;                            ; due to stuck port data_in ; Channel_Mod:inst1|TXReg[4], Channel_Mod:inst1|TXReg[5], Channel_Mod:inst1|TXReg[6], ;
-;                            ;                           ; Channel_Mod:inst1|TXReg[7], Channel_Mod:inst1|TXReg[8], Channel_Mod:inst1|TXReg[9], ;
-;                            ;                           ; Channel_Mod:inst1|TXReg[10], Channel_Mod:inst1|TXReg[11],                           ;
-;                            ;                           ; Channel_Mod:inst1|TXReg[12], Channel_Mod:inst1|TXReg[13],                           ;
-;                            ;                           ; Channel_Mod:inst1|TXReg[14], Channel_Mod:inst1|TXReg[15], Channel_Mod:inst1|dacdat  ;
-+----------------------------+---------------------------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 3           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 6           ;
+; Signed Embedded Multipliers           ; 2           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Application:instApp|x[0]              ; Stuck at GND due to stuck port data_in ;
+; Application:instApp|xm[3]             ; Merged with Application:instApp|xr[2]  ;
+; Application:instApp|xl[1]             ; Merged with Application:instApp|xr[2]  ;
+; Application:instApp|xm[4]             ; Merged with Application:instApp|xl[2]  ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -251,25 +310,319 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 36    ;
-; Number of registers using Synchronous Clear  ; 5     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Total registers                              ; 359   ;
+; Number of registers using Synchronous Clear  ; 15    ;
+; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Asynchronous Clear ; 82    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 25    ;
+; Number of registers using Clock Enable       ; 270   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |SndDriver|Channel_Mod:inst1|TXReg[15] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SndDriver|Ctrl:inst|SCCnt_temp[1]     ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |SndDriver|Ctrl:inst|BitCnt_temp[4]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; Application:instApp|noise[15]           ; 11      ;
+; Application:instApp|noise[0]            ; 1       ;
+; Application:instApp|noise[7]            ; 4       ;
+; Application:instApp|noise[1]            ; 1       ;
+; Application:instApp|noise[8]            ; 3       ;
+; Application:instApp|noise[2]            ; 1       ;
+; Application:instApp|noise[9]            ; 3       ;
+; Application:instApp|noise[3]            ; 1       ;
+; Application:instApp|noise[10]           ; 3       ;
+; Application:instApp|noise[4]            ; 3       ;
+; Application:instApp|noise[11]           ; 3       ;
+; Application:instApp|noise[14]           ; 3       ;
+; Application:instApp|noise[5]            ; 3       ;
+; Application:instApp|noise[12]           ; 3       ;
+; Application:instApp|noise[13]           ; 3       ;
+; Application:instApp|noise[6]            ; 3       ;
+; Total number of inverted registers = 16 ;         ;
++-----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                      ;
++--------------------------------------------------------------+-------------------------------------------------------------+------+
+; Register Name                                                ; Megafunction                                                ; Type ;
++--------------------------------------------------------------+-------------------------------------------------------------+------+
+; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|data2[0..14] ; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|Mux24_rtl_0 ; ROM  ;
+; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|data1[0..9]  ; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|Mux24_rtl_0 ; ROM  ;
++--------------------------------------------------------------+-------------------------------------------------------------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Sound|SndDriver:instSndDrv|Ctrl:inst4|SCCnt_temp[1]        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Sound|SndDriver:instSndDrv|Ctrl:inst4|BitCnt_temp[4]       ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Sound|SndDriver:instSndDrv|Channel_Mod:inst_right|TXReg[3] ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Sound|SndDriver:instSndDrv|Channel_Mod:inst_left|TXReg[5]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |Sound|Application:instApp|RDAC[12]                         ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |Sound|Application:instApp|x[6]                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0|altsyncram_37v:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                            ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                             ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: group_no:inst ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; number         ; 99    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0 ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                        ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                              ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                     ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                     ;
+; WIDTH_A                            ; 25                   ; Untyped                                                     ;
+; WIDTHAD_A                          ; 6                    ; Untyped                                                     ;
+; NUMWORDS_A                         ; 64                   ; Untyped                                                     ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                     ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                     ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                     ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                     ;
+; WIDTH_B                            ; 1                    ; Untyped                                                     ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                     ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                     ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                     ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                     ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                     ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                     ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                     ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                     ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                     ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                     ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                                     ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                     ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                     ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                     ;
+; INIT_FILE                          ; Sound.Sound0.rtl.mif ; Untyped                                                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                     ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                     ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                     ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                     ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                     ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                     ;
+; CBXI_PARAMETER                     ; altsyncram_37v       ; Untyped                                                     ;
++------------------------------------+----------------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Application:instApp|lpm_mult:Mult1 ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16           ; Untyped             ;
+; LPM_WIDTHB                                     ; 16           ; Untyped             ;
+; LPM_WIDTHP                                     ; 32           ; Untyped             ;
+; LPM_WIDTHR                                     ; 32           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_36t     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Application:instApp|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16           ; Untyped             ;
+; LPM_WIDTHB                                     ; 16           ; Untyped             ;
+; LPM_WIDTHP                                     ; 32           ; Untyped             ;
+; LPM_WIDTHR                                     ; 32           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_36t     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Application:instApp|PSAC:psac_inst|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+------------------------------------+
+; Parameter Name                                 ; Value        ; Type                               ;
++------------------------------------------------+--------------+------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                     ;
+; LPM_WIDTHA                                     ; 10           ; Untyped                            ;
+; LPM_WIDTHB                                     ; 8            ; Untyped                            ;
+; LPM_WIDTHP                                     ; 18           ; Untyped                            ;
+; LPM_WIDTHR                                     ; 18           ; Untyped                            ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                            ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                            ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                            ;
+; LATENCY                                        ; 0            ; Untyped                            ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                            ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                            ;
+; USE_EAB                                        ; OFF          ; Untyped                            ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped                            ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                            ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                            ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                            ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                            ;
+; CBXI_PARAMETER                                 ; mult_lbt     ; Untyped                            ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                            ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                            ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                            ;
++------------------------------------------------+--------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                   ;
++-------------------------------------------+------------------------------------------------------------------------+
+; Name                                      ; Value                                                                  ;
++-------------------------------------------+------------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                      ;
+; Entity Instance                           ; Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                                    ;
+;     -- WIDTH_A                            ; 25                                                                     ;
+;     -- NUMWORDS_A                         ; 64                                                                     ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                           ;
+;     -- WIDTH_B                            ; 1                                                                      ;
+;     -- NUMWORDS_B                         ; 1                                                                      ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                 ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                           ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                   ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                              ;
++-------------------------------------------+------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                            ;
++---------------------------------------+---------------------------------------------------+
+; Name                                  ; Value                                             ;
++---------------------------------------+---------------------------------------------------+
+; Number of entity instances            ; 3                                                 ;
+; Entity Instance                       ; Application:instApp|lpm_mult:Mult1                ;
+;     -- LPM_WIDTHA                     ; 16                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                ;
+;     -- USE_EAB                        ; OFF                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                ;
+; Entity Instance                       ; Application:instApp|lpm_mult:Mult0                ;
+;     -- LPM_WIDTHA                     ; 16                                                ;
+;     -- LPM_WIDTHB                     ; 16                                                ;
+;     -- LPM_WIDTHP                     ; 32                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                ;
+;     -- USE_EAB                        ; OFF                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                ;
+; Entity Instance                       ; Application:instApp|PSAC:psac_inst|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                                                ;
+;     -- LPM_WIDTHB                     ; 8                                                 ;
+;     -- LPM_WIDTHP                     ; 18                                                ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                          ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                ;
+;     -- USE_EAB                        ; OFF                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                ;
++---------------------------------------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Application:instApp|PSAC:psac_inst"                                                    ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; a[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -277,7 +630,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -287,7 +640,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Mon Dec 11 16:43:02 2017
+    Info: Processing started: Mon May 21 17:41:09 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Sound -c Sound
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file group_no.vhd
@@ -313,74 +666,92 @@ Info (12021): Found 2 design units, including 1 entities, in source file channel
 Info (12021): Found 2 design units, including 1 entities, in source file mux_audio.vhd
     Info (12022): Found design unit 1: mux_audio-arch
     Info (12023): Found entity 1: mux_audio
-Info (12127): Elaborating entity "SndDriver" for the top level hierarchy
-Warning (275043): Pin "lrsel" is missing source
-Info (12128): Elaborating entity "mux_audio" for hierarchy "mux_audio:inst5"
-Info (12128): Elaborating entity "Channel_Mod" for hierarchy "Channel_Mod:inst1"
-Info (12128): Elaborating entity "Ctrl" for hierarchy "Ctrl:inst"
+Info (12127): Elaborating entity "Sound" for the top level hierarchy
+Info (12128): Elaborating entity "SndDriver" for hierarchy "SndDriver:instSndDrv"
+Info (12128): Elaborating entity "mux_audio" for hierarchy "SndDriver:instSndDrv|mux_audio:inst5"
+Info (12128): Elaborating entity "Channel_Mod" for hierarchy "SndDriver:instSndDrv|Channel_Mod:inst_left"
+Info (12128): Elaborating entity "Ctrl" for hierarchy "SndDriver:instSndDrv|Ctrl:inst4"
+Info (12128): Elaborating entity "Application" for hierarchy "Application:instApp"
+Info (12128): Elaborating entity "PSAC" for hierarchy "Application:instApp|PSAC:psac_inst"
+Info (12128): Elaborating entity "POLY_ROM" for hierarchy "Application:instApp|PSAC:psac_inst|POLY_ROM:rom"
+Info (12128): Elaborating entity "group_no" for hierarchy "group_no:inst"
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "Application:instApp|PSAC:psac_inst|POLY_ROM:rom|Mux24_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 25
+        Info (286033): Parameter WIDTHAD_A set to 6
+        Info (286033): Parameter NUMWORDS_A set to 64
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to Sound.Sound0.rtl.mif
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Application:instApp|Mult1"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Application:instApp|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Application:instApp|PSAC:psac_inst|Mult0"
+Info (12130): Elaborated megafunction instantiation "Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0"
+Info (12133): Instantiated megafunction "Application:instApp|PSAC:psac_inst|POLY_ROM:rom|altsyncram:Mux24_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "25"
+    Info (12134): Parameter "WIDTHAD_A" = "6"
+    Info (12134): Parameter "NUMWORDS_A" = "64"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "Sound.Sound0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_37v.tdf
+    Info (12023): Found entity 1: altsyncram_37v
+Info (12130): Elaborated megafunction instantiation "Application:instApp|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "Application:instApp|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_36t.tdf
+    Info (12023): Found entity 1: mult_36t
+Info (12130): Elaborated megafunction instantiation "Application:instApp|PSAC:psac_inst|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Application:instApp|PSAC:psac_inst|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "10"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "18"
+    Info (12134): Parameter "LPM_WIDTHR" = "18"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_lbt.tdf
+    Info (12023): Found entity 1: mult_lbt
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dacdat" is stuck at GND
-    Warning (13410): Pin "lrsel" is stuck at GND
-    Warning (13410): Pin "RADC[15]" is stuck at GND
-    Warning (13410): Pin "RADC[14]" is stuck at GND
-    Warning (13410): Pin "RADC[13]" is stuck at GND
-    Warning (13410): Pin "RADC[12]" is stuck at GND
-    Warning (13410): Pin "RADC[11]" is stuck at GND
-    Warning (13410): Pin "RADC[10]" is stuck at GND
-    Warning (13410): Pin "RADC[9]" is stuck at GND
-    Warning (13410): Pin "RADC[8]" is stuck at GND
-    Warning (13410): Pin "RADC[7]" is stuck at GND
-    Warning (13410): Pin "RADC[6]" is stuck at GND
-    Warning (13410): Pin "RADC[5]" is stuck at GND
-    Warning (13410): Pin "RADC[4]" is stuck at GND
-    Warning (13410): Pin "RADC[3]" is stuck at GND
-    Warning (13410): Pin "RADC[2]" is stuck at GND
-    Warning (13410): Pin "RADC[1]" is stuck at GND
-    Warning (13410): Pin "RADC[0]" is stuck at GND
-Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "HEX6[0]" is stuck at GND
+    Warning (13410): Pin "HEX6[1]" is stuck at GND
+    Warning (13410): Pin "HEX6[2]" is stuck at GND
+    Warning (13410): Pin "HEX6[3]" is stuck at GND
+    Warning (13410): Pin "HEX6[4]" is stuck at VCC
+    Warning (13410): Pin "HEX6[5]" is stuck at GND
+    Warning (13410): Pin "HEX6[6]" is stuck at GND
+    Warning (13410): Pin "HEX7[0]" is stuck at GND
+    Warning (13410): Pin "HEX7[1]" is stuck at GND
+    Warning (13410): Pin "HEX7[2]" is stuck at GND
+    Warning (13410): Pin "HEX7[3]" is stuck at GND
+    Warning (13410): Pin "HEX7[4]" is stuck at VCC
+    Warning (13410): Pin "HEX7[5]" is stuck at GND
+    Warning (13410): Pin "HEX7[6]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 32 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "RDAC[15]"
-    Warning (15610): No output dependent on input pin "RDAC[14]"
-    Warning (15610): No output dependent on input pin "RDAC[13]"
-    Warning (15610): No output dependent on input pin "RDAC[12]"
-    Warning (15610): No output dependent on input pin "RDAC[11]"
-    Warning (15610): No output dependent on input pin "RDAC[10]"
-    Warning (15610): No output dependent on input pin "RDAC[9]"
-    Warning (15610): No output dependent on input pin "RDAC[8]"
-    Warning (15610): No output dependent on input pin "RDAC[7]"
-    Warning (15610): No output dependent on input pin "RDAC[6]"
-    Warning (15610): No output dependent on input pin "RDAC[5]"
-    Warning (15610): No output dependent on input pin "RDAC[4]"
-    Warning (15610): No output dependent on input pin "RDAC[3]"
-    Warning (15610): No output dependent on input pin "RDAC[2]"
-    Warning (15610): No output dependent on input pin "RDAC[1]"
-    Warning (15610): No output dependent on input pin "RDAC[0]"
-    Warning (15610): No output dependent on input pin "LDAC[0]"
-    Warning (15610): No output dependent on input pin "LDAC[15]"
-    Warning (15610): No output dependent on input pin "LDAC[14]"
-    Warning (15610): No output dependent on input pin "LDAC[13]"
-    Warning (15610): No output dependent on input pin "LDAC[12]"
-    Warning (15610): No output dependent on input pin "LDAC[11]"
-    Warning (15610): No output dependent on input pin "LDAC[10]"
-    Warning (15610): No output dependent on input pin "LDAC[9]"
-    Warning (15610): No output dependent on input pin "LDAC[8]"
-    Warning (15610): No output dependent on input pin "LDAC[7]"
-    Warning (15610): No output dependent on input pin "LDAC[6]"
-    Warning (15610): No output dependent on input pin "LDAC[5]"
-    Warning (15610): No output dependent on input pin "LDAC[4]"
-    Warning (15610): No output dependent on input pin "LDAC[3]"
-    Warning (15610): No output dependent on input pin "LDAC[2]"
-    Warning (15610): No output dependent on input pin "LDAC[1]"
-Info (21057): Implemented 114 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 41 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 493 megabytes
-    Info: Processing ended: Mon Dec 11 16:43:05 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 697 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 623 logic cells
+    Info (21064): Implemented 25 RAM segments
+    Info (21062): Implemented 6 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 519 megabytes
+    Info: Processing ended: Mon May 21 17:41:16 2018
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:04
 
 

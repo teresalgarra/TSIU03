@@ -1,0 +1,166 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 22:53:43  October 09, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Soundpad_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY Soundpad
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:53:43  OCTOBER 09, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "12.1 SP1.33"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_C2 -to adclrc
+set_location_assignment PIN_D2 -to adcdat
+set_location_assignment PIN_M23 -to rstn
+set_location_assignment PIN_E1 -to mclk
+set_location_assignment PIN_E3 -to daclrc
+set_location_assignment PIN_D1 -to dacdat
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_F2 -to bclk
+set_location_assignment PIN_A12 -to vga_clk
+set_location_assignment PIN_C10 -to vga_sync
+set_location_assignment PIN_H10 -to vga_r[7]
+set_location_assignment PIN_H8 -to vga_r[6]
+set_location_assignment PIN_J12 -to vga_r[5]
+set_location_assignment PIN_G10 -to vga_r[4]
+set_location_assignment PIN_F12 -to vga_r[3]
+set_location_assignment PIN_D10 -to vga_r[2]
+set_location_assignment PIN_E11 -to vga_r[1]
+set_location_assignment PIN_E12 -to vga_r[0]
+set_location_assignment PIN_C9 -to vga_g[7]
+set_location_assignment PIN_F10 -to vga_g[6]
+set_location_assignment PIN_B8 -to vga_g[5]
+set_location_assignment PIN_C8 -to vga_g[4]
+set_location_assignment PIN_H12 -to vga_g[3]
+set_location_assignment PIN_F8 -to vga_g[2]
+set_location_assignment PIN_G11 -to vga_g[1]
+set_location_assignment PIN_G8 -to vga_g[0]
+set_location_assignment PIN_F11 -to vga_blank
+set_location_assignment PIN_D12 -to vga_b[7]
+set_location_assignment PIN_D11 -to vga_b[6]
+set_location_assignment PIN_C12 -to vga_b[5]
+set_location_assignment PIN_A11 -to vga_b[4]
+set_location_assignment PIN_B11 -to vga_b[3]
+set_location_assignment PIN_C11 -to vga_b[2]
+set_location_assignment PIN_A10 -to vga_b[1]
+set_location_assignment PIN_B10 -to vga_b[0]
+set_location_assignment PIN_G13 -to hsync
+set_location_assignment PIN_G6 -to PS2_CLK
+set_location_assignment PIN_H5 -to PS2_DAT
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_C13 -to vsync
+set_location_assignment PIN_T8 -to ad[19]
+set_location_assignment PIN_AB8 -to ad[18]
+set_location_assignment PIN_AH3 -to dio[0]
+set_location_assignment PIN_AF4 -to dio[1]
+set_location_assignment PIN_AG4 -to dio[2]
+set_location_assignment PIN_AH4 -to dio[3]
+set_location_assignment PIN_AF6 -to dio[4]
+set_location_assignment PIN_AG6 -to dio[5]
+set_location_assignment PIN_AH6 -to dio[6]
+set_location_assignment PIN_AF7 -to dio[7]
+set_location_assignment PIN_AD1 -to dio[8]
+set_location_assignment PIN_AD2 -to dio[9]
+set_location_assignment PIN_AE2 -to dio[10]
+set_location_assignment PIN_AE1 -to dio[11]
+set_location_assignment PIN_AE3 -to dio[12]
+set_location_assignment PIN_AE4 -to dio[13]
+set_location_assignment PIN_AF3 -to dio[14]
+set_location_assignment PIN_AG3 -to dio[15]
+set_location_assignment PIN_AB7 -to ad[0]
+set_location_assignment PIN_AD7 -to ad[1]
+set_location_assignment PIN_AE7 -to ad[2]
+set_location_assignment PIN_AC7 -to ad[3]
+set_location_assignment PIN_AB6 -to ad[4]
+set_location_assignment PIN_AE6 -to ad[5]
+set_location_assignment PIN_AB5 -to ad[6]
+set_location_assignment PIN_AC5 -to ad[7]
+set_location_assignment PIN_AF5 -to ad[8]
+set_location_assignment PIN_T7 -to ad[9]
+set_location_assignment PIN_AF2 -to ad[10]
+set_location_assignment PIN_AD3 -to ad[11]
+set_location_assignment PIN_AB4 -to ad[12]
+set_location_assignment PIN_AC3 -to ad[13]
+set_location_assignment PIN_AA4 -to ad[14]
+set_location_assignment PIN_AB11 -to ad[15]
+set_location_assignment PIN_AC11 -to ad[16]
+set_location_assignment PIN_AB9 -to ad[17]
+set_location_assignment PIN_AF8 -to ce_n
+set_location_assignment PIN_AD5 -to oe_n
+set_location_assignment PIN_AE8 -to we_n
+set_location_assignment PIN_AC4 -to sram_ub
+set_location_assignment PIN_AD4 -to sram_lb
+set_location_assignment PIN_B7 -to scl
+set_location_assignment PIN_A8 -to sda
+set_global_assignment -name VHDL_FILE i2c.vhd
+set_global_assignment -name BDF_FILE SndDriver.bdf
+set_global_assignment -name VHDL_FILE mux_audio.vhd
+set_global_assignment -name VHDL_FILE ctrl.vhd
+set_global_assignment -name VHDL_FILE Channel_Mod.vhd
+set_global_assignment -name BDF_FILE Soundpad.bdf
+set_global_assignment -name BDF_FILE VGA_contr.bdf
+set_global_assignment -name VHDL_FILE vsyncr.vhd
+set_global_assignment -name VHDL_FILE volume.vhd
+set_global_assignment -name VHDL_FILE vga_gen.vhd
+set_global_assignment -name VHDL_FILE Screen_gen.vhd
+set_global_assignment -name VHDL_FILE PLL.vhd
+set_global_assignment -name VHDL_FILE pixelcounter.vhd
+set_global_assignment -name VHDL_FILE pixel_reg.vhd
+set_global_assignment -name VHDL_FILE linecounter.vhd
+set_global_assignment -name VHDL_FILE keyboard_decoder.vhd
+set_global_assignment -name VHDL_FILE hsyncr.vhd
+set_global_assignment -name VHDL_FILE group_no.vhd
+set_global_assignment -name VHDL_FILE clock_gen.vhd
+set_global_assignment -name VHDL_FILE blank_video.vhd
+set_global_assignment -name VHDL_FILE blank_syncr.vhd
+set_global_assignment -name VHDL_FILE balance.vhd
+set_global_assignment -name VHDL_FILE cut_sound_output.vhd
+set_global_assignment -name VHDL_FILE sram_ctrl2.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

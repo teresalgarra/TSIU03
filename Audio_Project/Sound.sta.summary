@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -54.930
+TNS   : -6530.813
+
+Type  : Slow 1200mV 85C Model Setup 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -2.402
+TNS   : -10.361
+
+Type  : Slow 1200mV 85C Model Hold 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -3.163
+TNS   : -12.450
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -703.933
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -49.365
+TNS   : -5859.191
+
+Type  : Slow 1200mV 0C Model Setup 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -2.113
+TNS   : -9.203
+
+Type  : Slow 1200mV 0C Model Hold 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -2.809
+TNS   : -11.036
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -702.929
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -26.315
+TNS   : -2965.782
+
+Type  : Fast 1200mV 0C Model Setup 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -0.696
+TNS   : -2.489
+
+Type  : Fast 1200mV 0C Model Hold 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : -1.872
+TNS   : -7.386
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -635.113
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard_decoder:inst2|shiftreg[0]'
+Slack : 0.274
+TNS   : 0.000
+
+------------------------------------------------------------

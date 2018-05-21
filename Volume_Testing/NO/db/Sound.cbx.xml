@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="Sound">
-		<CBX_INST_ENTRY INSTANCE_NAME="|volume_block|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_8so.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|volume_block|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_8so.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|volume_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_tvs.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|volume_block|lpm_mult:Mult1" CBX_FILE_NAME="mult_tvs.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

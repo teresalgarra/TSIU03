@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sram_ctrl2 is
+port(
+	clk, rstn: in std_logic;
+	data_f2s: in std_logic_vector(15 downto 0); --data in
+	ready: out std_logic;
+	data_s2f : out std_logic_vector(15 downto 0);--data out
+	ad: out unsigned (19 downto 0);
+	we_n, oe_n: out std_logic;
+	dio: inout std_logic_vector (15 downto 0); -- data io
+	ce_n: out std_logic);
+end entity;
+	
+architecture arch of sram_ctrl2 is
+signal ad_int : unsigned(19 downto 0);
+signal ad_cnt : unsigned()
+signal cntr : unsigned(9 downto 0);
+
+begin 
+process (clk, rstn)
+begin
+	if (rstn='0') then --reset
+		ad_int <= (others => '0');
+		cntr <= 0;
+	elsif rising_edge (clk) then
+		if play_record_ctrl(0) = '1' then
+			
+		elsif play_record_ctrl()
+	end if;
+end process;
+	
