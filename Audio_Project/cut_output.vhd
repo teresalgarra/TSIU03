@@ -24,7 +24,7 @@ begin
 			elsif LDAC < -32768 then
 				LADC2_VECT <= (15 => '1', others => '0');
 			else
-				LADC2_VECT <= std_logic_vector(LDAC(41) & LDAC(14 DOWNTO 0));
+				LADC2_VECT <= std_logic_vector(LDAC(15 DOWNTO 0));
 			end if;
 			
 			if RDAC > 32767 then
@@ -32,7 +32,7 @@ begin
 			elsif RDAC < -32768 then
 				RADC2_VECT <= (15 => '1', others => '0');
 			else
-				RADC2_VECT <= std_logic_vector(RDAC(41) & RDAC(14 DOWNTO 0));
+				RADC2_VECT <= std_logic_vector(RDAC(15 DOWNTO 0));
 			end if;
 		end if;
 	end process;

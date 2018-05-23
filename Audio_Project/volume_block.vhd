@@ -18,8 +18,8 @@ begin
 			LADC <= (others => '0');
 			RADC <= (others => '0');
 		elsif rising_edge(clk) then
-			LADC <= LDAC * signed('0' & volume_ctrl) * 1/5;
-			RADC <= RDAC * signed('0' & volume_ctrl) * 1/5;
+			LADC <= LDAC * signed('0' & volume_ctrl) * 1/4;
+			RADC <= RDAC * signed('0' & volume_ctrl) * 1/4;
 		end if;
 	end process;
 end architecture;

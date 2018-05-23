@@ -1,5 +1,5 @@
 Flow report for Sound
-Mon May 21 20:00:37 2018
+Wed May 23 16:42:57 2018
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Flow Summary                                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Flow Status                        ; Successful - Mon May 21 20:00:37 2018             ;
+; Flow Status                        ; Successful - Wed May 23 16:42:57 2018             ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; Sound                                             ;
 ; Top-level Entity Name              ; Sound                                             ;
 ; Family                             ; Cyclone IV E                                      ;
 ; Device                             ; EP4CE115F29C7                                     ;
 ; Timing Models                      ; Final                                             ;
-; Total logic elements               ; 1,314 / 114,480 ( 1 % )                           ;
-;     Total combinational functions  ; 1,258 / 114,480 ( 1 % )                           ;
-;     Dedicated logic registers      ; 448 / 114,480 ( < 1 % )                           ;
-; Total registers                    ; 448                                               ;
+; Total logic elements               ; 665 / 114,480 ( < 1 % )                           ;
+;     Total combinational functions  ; 629 / 114,480 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 408 / 114,480 ( < 1 % )                           ;
+; Total registers                    ; 408                                               ;
 ; Total pins                         ; 45 / 529 ( 9 % )                                  ;
 ; Total virtual pins                 ; 0                                                 ;
 ; Total memory bits                  ; 1,600 / 3,981,312 ( < 1 % )                       ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/21/2018 19:59:36 ;
+; Start date & time ; 05/23/2018 16:41:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sound               ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 159303459275595.152692557603348 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 159303459275595.152708650701336 ; --            ; --          ; --             ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                            ; Balanced      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                 ; <None>        ; --          ; --             ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 537 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:25     ; 2.8                     ; 1139 MB             ; 00:00:37                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 437 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 568 MB              ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 417 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:52     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 523 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:24     ; 2.8                     ; 1131 MB             ; 00:00:33                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 437 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 534 MB              ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 412 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:55     ; --                      ; --                  ; 00:00:48                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
